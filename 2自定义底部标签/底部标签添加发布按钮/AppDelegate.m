@@ -20,7 +20,7 @@
     // Override point for customization after application launch.
     //创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
+  
     //设置跟控制器
     self.window.rootViewController = [[MYViewController alloc] init];
     //显示窗口

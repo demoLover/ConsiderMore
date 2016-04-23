@@ -47,6 +47,7 @@
 		8482D5151CCBBD4300070FAE /* MYNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNewViewController.m; sourceTree = "<group>"; };
 		8482D5171CCBBF2B00070FAE /* MYNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNavViewController.h; sourceTree = "<group>"; };
 		8482D5181CCBBF2B00070FAE /* MYNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNavViewController.m; sourceTree = "<group>"; };
+		8482D51A1CCBC11500070FAE /* Consinder.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Consinder.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +316,7 @@
 		8482D5031CCBB76300070FAE /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				8482D51A1CCBC11500070FAE /* Consinder.pch */,
 				8482D4CD1CCB55A400070FAE /* AppDelegate.h */,
 				8482D4CE1CCB55A500070FAE /* AppDelegate.m */,
 				8482D4D31CCB55A500070FAE /* Main.storyboard */,
@@ -571,6 +573,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "底部标签添加发布按钮/Classes/Other/Consinder.pch";
 				INFOPLIST_FILE = "底部标签添加发布按钮/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.520it.----------";
@@ -582,6 +586,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "底部标签添加发布按钮/Classes/Other/Consinder.pch";
 				INFOPLIST_FILE = "底部标签添加发布按钮/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.520it.----------";

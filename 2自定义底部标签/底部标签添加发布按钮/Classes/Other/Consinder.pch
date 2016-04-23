@@ -1,0 +1,15 @@
+//
+//  Consinder.pch
+//  底部标签添加发布按钮
+//
+//  Created by admin on 16/4/23.
+//  Copyright © 2016年 程涛. All rights reserved.
+//
+
+#ifndef __OBJC__
+
+#define MYScreenW [UIScreen mainScreen].bounds.size.width
+
+#define MYScreenH [UIScreen mainScreen].bounds.size.height
+
+#endif /* Consinder_pch */
