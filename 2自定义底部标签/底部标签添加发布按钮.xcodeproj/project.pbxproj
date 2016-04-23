@@ -15,6 +15,11 @@
 		8482D4E31CCB577C00070FAE /* MYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D4E21CCB577C00070FAE /* MYViewController.m */; };
 		8482D4E61CCBA42800070FAE /* MYPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D4E51CCBA42800070FAE /* MYPresentViewController.m */; };
 		8482D4E91CCBAA7600070FAE /* MYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D4E81CCBAA7600070FAE /* MYTabBar.m */; };
+		8482D50D1CCBBCD600070FAE /* MYEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D50C1CCBBCD600070FAE /* MYEssenceViewController.m */; };
+		8482D5101CCBBCF600070FAE /* MYFoucsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D50F1CCBBCF600070FAE /* MYFoucsViewController.m */; };
+		8482D5131CCBBD1D00070FAE /* MYPersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D5121CCBBD1D00070FAE /* MYPersonalViewController.m */; };
+		8482D5161CCBBD4300070FAE /* MYNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D5151CCBBD4300070FAE /* MYNewViewController.m */; };
+		8482D5191CCBBF2B00070FAE /* MYNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D5181CCBBF2B00070FAE /* MYNavViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,16 @@
 		8482D4E51CCBA42800070FAE /* MYPresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYPresentViewController.m; path = ../../../MYPresentViewController.m; sourceTree = "<group>"; };
 		8482D4E71CCBAA7600070FAE /* MYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYTabBar.h; path = ../../../MYTabBar.h; sourceTree = "<group>"; };
 		8482D4E81CCBAA7600070FAE /* MYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYTabBar.m; path = ../../../MYTabBar.m; sourceTree = "<group>"; };
+		8482D50B1CCBBCD600070FAE /* MYEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYEssenceViewController.h; sourceTree = "<group>"; };
+		8482D50C1CCBBCD600070FAE /* MYEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYEssenceViewController.m; sourceTree = "<group>"; };
+		8482D50E1CCBBCF600070FAE /* MYFoucsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFoucsViewController.h; sourceTree = "<group>"; };
+		8482D50F1CCBBCF600070FAE /* MYFoucsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFoucsViewController.m; sourceTree = "<group>"; };
+		8482D5111CCBBD1D00070FAE /* MYPersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPersonalViewController.h; sourceTree = "<group>"; };
+		8482D5121CCBBD1D00070FAE /* MYPersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPersonalViewController.m; sourceTree = "<group>"; };
+		8482D5141CCBBD4300070FAE /* MYNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNewViewController.h; sourceTree = "<group>"; };
+		8482D5151CCBBD4300070FAE /* MYNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNewViewController.m; sourceTree = "<group>"; };
+		8482D5171CCBBF2B00070FAE /* MYNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNavViewController.h; sourceTree = "<group>"; };
+		8482D5181CCBBF2B00070FAE /* MYNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNavViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +125,8 @@
 		8482D4EC1CCBB76300070FAE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8482D50B1CCBBCD600070FAE /* MYEssenceViewController.h */,
+				8482D50C1CCBBCD600070FAE /* MYEssenceViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -141,6 +158,8 @@
 		8482D4F01CCBB76300070FAE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8482D50E1CCBBCF600070FAE /* MYFoucsViewController.h */,
+				8482D50F1CCBBCF600070FAE /* MYFoucsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,6 +193,8 @@
 			children = (
 				8482D4E11CCB577C00070FAE /* MYViewController.h */,
 				8482D4E21CCB577C00070FAE /* MYViewController.m */,
+				8482D5171CCBBF2B00070FAE /* MYNavViewController.h */,
+				8482D5181CCBBF2B00070FAE /* MYNavViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -207,6 +228,8 @@
 		8482D4F81CCBB76300070FAE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8482D5111CCBBD1D00070FAE /* MYPersonalViewController.h */,
+				8482D5121CCBBD1D00070FAE /* MYPersonalViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -238,6 +261,8 @@
 		8482D4FC1CCBB76300070FAE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8482D5141CCBBD4300070FAE /* MYNewViewController.h */,
+				8482D5151CCBBD4300070FAE /* MYNewViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -425,9 +450,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8482D4E31CCB577C00070FAE /* MYViewController.m in Sources */,
+				8482D5161CCBBD4300070FAE /* MYNewViewController.m in Sources */,
+				8482D5191CCBBF2B00070FAE /* MYNavViewController.m in Sources */,
 				8482D4CF1CCB55A500070FAE /* AppDelegate.m in Sources */,
 				8482D4E91CCBAA7600070FAE /* MYTabBar.m in Sources */,
+				8482D50D1CCBBCD600070FAE /* MYEssenceViewController.m in Sources */,
 				8482D4E61CCBA42800070FAE /* MYPresentViewController.m in Sources */,
+				8482D5101CCBBCF600070FAE /* MYFoucsViewController.m in Sources */,
+				8482D5131CCBBD1D00070FAE /* MYPersonalViewController.m in Sources */,
 				8482D4CC1CCB55A400070FAE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
