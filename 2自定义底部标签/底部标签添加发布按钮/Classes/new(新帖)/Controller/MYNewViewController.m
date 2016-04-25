@@ -17,13 +17,44 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //设置导航条
+    [self setupNavgationBar];
 }
 
+/*************** 设置导航条 ***************/
+- (void)setupNavgationBar
+{
+    //背景颜色
+    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
+    
+    //中间标题
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    
+    //左边按钮
+    UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    [leftBtn setImage:[UIImage imageNamed:@"MainTagSubIcon"] forState:UIControlStateNormal];
+    [leftBtn setImage:[UIImage imageNamed:@"MainTagSubIconClick"] forState:UIControlStateHighlighted];
+    [leftBtn addTarget:self action:@selector(leftBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    [leftBtn sizeToFit];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
+    
+    //右边
+}
+
+/*************** 设置导航条 ***************/
+
+
+/*************** 左按钮点击 ***************/
+
+- (void)leftBtnClick
+{
+    
+}
+/*************** 左按钮点击 ***************/
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

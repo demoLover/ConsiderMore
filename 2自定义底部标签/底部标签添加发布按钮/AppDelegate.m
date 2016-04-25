@@ -25,6 +25,7 @@
     self.window.rootViewController = [[MYViewController alloc] init];
     //显示窗口
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

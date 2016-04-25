@@ -18,16 +18,40 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor greenColor];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //设置导航条内容
+    [self setupNavgationBar];
 }
 
+
+/*************** 设置导航条内容 ***************/
+- (void)setupNavgationBar
+{
+    //背景颜色
+    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
+    
+    //中间标题
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    
+    //左边按钮
+
+    
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"MainTagSubIcon"] highlightImage:[UIImage imageNamed:@"MainTagSubIconClick"] target:self action:@selector(leftBtnClick)];
+    
+    //右边
+}
+/*************** 设置导航条内容 ***************/
+
+
+/*************** 左按钮点击 ***************/
+- (void)leftBtnClick
+{
+    
+}
+/*************** 左按钮点击 ***************/
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
 }
 
 #pragma mark - Table view data source

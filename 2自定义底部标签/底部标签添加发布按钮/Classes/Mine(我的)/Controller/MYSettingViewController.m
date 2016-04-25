@@ -1,81 +1,24 @@
 //
-//  MYPersonalViewController.m
+//  MYSettingViewController.m
 //  底部标签添加发布按钮
 //
-//  Created by admin on 16/4/23.
+//  Created by admin on 16/4/24.
 //  Copyright © 2016年 程涛. All rights reserved.
 //
 
-#import "MYPersonalViewController.h"
 #import "MYSettingViewController.h"
-#import "MYCoinViewController.h"
 
-@interface MYPersonalViewController ()
+@interface MYSettingViewController ()
 
 @end
 
-@implementation MYPersonalViewController
+@implementation MYSettingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor yellowColor];
     
-    //设置导航栏
-    [self setupNavgationBar];
+    self.navigationItem.title = @"设置";
 }
-
-
-/*************** 设置导航栏 ***************/
-- (void)setupNavgationBar
-{
-    //标题
-    self.navigationItem.title = @"我的";
-    
-    //左边
-
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"nav_coin_icon"] highlightImage:[UIImage imageNamed:@"nav_coin_icon_click"] target:self action:@selector(leftBtnClick)];
-    
-    //右边 设置
- 
-    UIBarButtonItem *item0 = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-setting-icon"] highlightImage:[UIImage imageNamed:@"mine-setting-icon-click"] target:self action:@selector(setBtnClick)];
-    
-    //右边 月亮
-    
-    UIBarButtonItem *item1 = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-moon-icon"] highlightImage:[UIImage imageNamed:@"mine-moon-icon-click"] target:self action:@selector(moonBtnClick)];
-    
-    self.navigationItem.rightBarButtonItems = @[item1,item0];
-
-}
-/***************  设置导航栏  ***************/
-
-/*************** 左按钮点击 ***************/
-
-- (void)leftBtnClick
-{
-    MYCoinViewController *coinVC = [[MYCoinViewController alloc] init];
-    
-    [self.navigationController pushViewController:coinVC animated:YES];
-}
-/*************** 左按钮点击 ***************/
-
-
-/*************** 设置按钮点击 ***************/
-- (void)setBtnClick
-{
-    MYSettingViewController *setVC = [[MYSettingViewController alloc] init];
-    
-    [self.navigationController pushViewController:setVC animated:YES];
-    
-}
-/*************** 设置按钮点击 ***************/
-
-/*************** 月亮点击 ***************/
-- (void)moonBtnClick
-{
-    
-}
-/*************** 月亮点击 ***************/
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

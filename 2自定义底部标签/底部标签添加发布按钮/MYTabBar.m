@@ -9,6 +9,7 @@
 #import "MYTabBar.h"
 #import "MYPresentViewController.h"
 
+
 @interface MYTabBar()
 
 //发不按钮
@@ -40,8 +41,8 @@
     [super layoutSubviews];
     
     //定义按钮宽高
-    CGFloat buttonW = self.frame.size.width / 5;
-    CGFloat buttonH = self.frame.size.height;
+    CGFloat buttonW = self.my_width / 5;
+    CGFloat buttonH = self.my_height;
     CGFloat buttonY = 0;
     CGFloat buttonX = 0;
     
@@ -62,7 +63,7 @@
     
     //设置发布按钮位置
     self.publishBtn.frame = CGRectMake(0, 0, buttonW, buttonH);
-    self.publishBtn.center = CGPointMake(self.frame.size.width * 0.5, self.frame.size.height * 0.5);
+    self.publishBtn.center = CGPointMake(self.my_width * 0.5, self.my_height * 0.5);
 }
 /*************** 布局子控件 ***************/
 

@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  底部标签添加发布按钮
+//
+//  Created by admin on 16/4/24.
+//  Copyright © 2016年 程涛. All rights reserved.
+//
+
+/*************** 非OC ***************/
+
+/*************** 非OC ***************/
+
+
+#ifdef __OBJC__
+
+#import "UIView+MYExtension.h"
+#import "UIBarButtonItem+Item.h"
+
+
+#endif /* PrefixHeader_pch */

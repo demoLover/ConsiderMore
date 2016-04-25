@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8478C0031CCE33E500358CE1 /* MYCoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478C0021CCE33E500358CE1 /* MYCoinViewController.m */; };
 		8482D4CC1CCB55A400070FAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D4CB1CCB55A400070FAE /* main.m */; };
 		8482D4CF1CCB55A500070FAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D4CE1CCB55A500070FAE /* AppDelegate.m */; };
-		8482D4D51CCB55A500070FAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8482D4D31CCB55A500070FAE /* Main.storyboard */; };
 		8482D4D71CCB55A500070FAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8482D4D61CCB55A500070FAE /* Assets.xcassets */; };
 		8482D4DA1CCB55A500070FAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8482D4D81CCB55A500070FAE /* LaunchScreen.storyboard */; };
 		8482D4E31CCB577C00070FAE /* MYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D4E21CCB577C00070FAE /* MYViewController.m */; };
@@ -20,14 +20,20 @@
 		8482D5131CCBBD1D00070FAE /* MYPersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D5121CCBBD1D00070FAE /* MYPersonalViewController.m */; };
 		8482D5161CCBBD4300070FAE /* MYNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D5151CCBBD4300070FAE /* MYNewViewController.m */; };
 		8482D5191CCBBF2B00070FAE /* MYNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D5181CCBBF2B00070FAE /* MYNavViewController.m */; };
+		8482D51D1CCBC75600070FAE /* UIView+MYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D51C1CCBC75600070FAE /* UIView+MYExtension.m */; };
+		848CFF131CCBE014002A8DF9 /* PrefixHeader.pch in Sources */ = {isa = PBXBuildFile; fileRef = 848CFF121CCBDF55002A8DF9 /* PrefixHeader.pch */; };
+		84B229FA1CCD08D40078456B /* MYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B229F91CCD08D40078456B /* MYSettingViewController.m */; };
+		84B22A001CCD0A660078456B /* MYSugessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B229FF1CCD0A660078456B /* MYSugessionViewController.m */; };
+		84E02FF11CCCDDBB00B0BF9E /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E02FF01CCCDDBB00B0BF9E /* UIBarButtonItem+Item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8478C0011CCE33E500358CE1 /* MYCoinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCoinViewController.h; sourceTree = "<group>"; };
+		8478C0021CCE33E500358CE1 /* MYCoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCoinViewController.m; sourceTree = "<group>"; };
 		8482D4C71CCB55A400070FAE /* 底部标签添加发布按钮.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "底部标签添加发布按钮.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8482D4CB1CCB55A400070FAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8482D4CD1CCB55A400070FAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
 		8482D4CE1CCB55A500070FAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
-		8482D4D41CCB55A500070FAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8482D4D61CCB55A500070FAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8482D4D91CCB55A500070FAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8482D4DB1CCB55A500070FAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,7 +53,15 @@
 		8482D5151CCBBD4300070FAE /* MYNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNewViewController.m; sourceTree = "<group>"; };
 		8482D5171CCBBF2B00070FAE /* MYNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNavViewController.h; sourceTree = "<group>"; };
 		8482D5181CCBBF2B00070FAE /* MYNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNavViewController.m; sourceTree = "<group>"; };
-		8482D51A1CCBC11500070FAE /* Consinder.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Consinder.pch; sourceTree = "<group>"; };
+		8482D51B1CCBC75600070FAE /* UIView+MYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MYExtension.h"; sourceTree = "<group>"; };
+		8482D51C1CCBC75600070FAE /* UIView+MYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MYExtension.m"; sourceTree = "<group>"; };
+		848CFF121CCBDF55002A8DF9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		84B229F81CCD08D40078456B /* MYSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSettingViewController.h; sourceTree = "<group>"; };
+		84B229F91CCD08D40078456B /* MYSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSettingViewController.m; sourceTree = "<group>"; };
+		84B229FE1CCD0A660078456B /* MYSugessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSugessionViewController.h; sourceTree = "<group>"; };
+		84B229FF1CCD0A660078456B /* MYSugessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSugessionViewController.m; sourceTree = "<group>"; };
+		84E02FEF1CCCDDBB00B0BF9E /* UIBarButtonItem+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Item.h"; sourceTree = "<group>"; };
+		84E02FF01CCCDDBB00B0BF9E /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +175,8 @@
 			children = (
 				8482D50E1CCBBCF600070FAE /* MYFoucsViewController.h */,
 				8482D50F1CCBBCF600070FAE /* MYFoucsViewController.m */,
+				84B229FE1CCD0A660078456B /* MYSugessionViewController.h */,
+				84B229FF1CCD0A660078456B /* MYSugessionViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -231,6 +247,10 @@
 			children = (
 				8482D5111CCBBD1D00070FAE /* MYPersonalViewController.h */,
 				8482D5121CCBBD1D00070FAE /* MYPersonalViewController.m */,
+				84B229F81CCD08D40078456B /* MYSettingViewController.h */,
+				84B229F91CCD08D40078456B /* MYSettingViewController.m */,
+				8478C0011CCE33E500358CE1 /* MYCoinViewController.h */,
+				8478C0021CCE33E500358CE1 /* MYCoinViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -316,10 +336,9 @@
 		8482D5031CCBB76300070FAE /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				8482D51A1CCBC11500070FAE /* Consinder.pch */,
 				8482D4CD1CCB55A400070FAE /* AppDelegate.h */,
 				8482D4CE1CCB55A500070FAE /* AppDelegate.m */,
-				8482D4D31CCB55A500070FAE /* Main.storyboard */,
+				848CFF121CCBDF55002A8DF9 /* PrefixHeader.pch */,
 				8482D5041CCBB76300070FAE /* Catagory */,
 				8482D5051CCBB76300070FAE /* Lib */,
 			);
@@ -329,6 +348,10 @@
 		8482D5041CCBB76300070FAE /* Catagory */ = {
 			isa = PBXGroup;
 			children = (
+				8482D51B1CCBC75600070FAE /* UIView+MYExtension.h */,
+				8482D51C1CCBC75600070FAE /* UIView+MYExtension.m */,
+				84E02FEF1CCCDDBB00B0BF9E /* UIBarButtonItem+Item.h */,
+				84E02FF01CCCDDBB00B0BF9E /* UIBarButtonItem+Item.m */,
 			);
 			path = Catagory;
 			sourceTree = "<group>";
@@ -440,7 +463,6 @@
 			files = (
 				8482D4DA1CCB55A500070FAE /* LaunchScreen.storyboard in Resources */,
 				8482D4D71CCB55A500070FAE /* Assets.xcassets in Resources */,
-				8482D4D51CCB55A500070FAE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,31 +473,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848CFF131CCBE014002A8DF9 /* PrefixHeader.pch in Sources */,
+				8482D51D1CCBC75600070FAE /* UIView+MYExtension.m in Sources */,
 				8482D4E31CCB577C00070FAE /* MYViewController.m in Sources */,
 				8482D5161CCBBD4300070FAE /* MYNewViewController.m in Sources */,
 				8482D5191CCBBF2B00070FAE /* MYNavViewController.m in Sources */,
 				8482D4CF1CCB55A500070FAE /* AppDelegate.m in Sources */,
 				8482D4E91CCBAA7600070FAE /* MYTabBar.m in Sources */,
+				84B229FA1CCD08D40078456B /* MYSettingViewController.m in Sources */,
+				84E02FF11CCCDDBB00B0BF9E /* UIBarButtonItem+Item.m in Sources */,
 				8482D50D1CCBBCD600070FAE /* MYEssenceViewController.m in Sources */,
+				84B22A001CCD0A660078456B /* MYSugessionViewController.m in Sources */,
 				8482D4E61CCBA42800070FAE /* MYPresentViewController.m in Sources */,
 				8482D5101CCBBCF600070FAE /* MYFoucsViewController.m in Sources */,
 				8482D5131CCBBD1D00070FAE /* MYPersonalViewController.m in Sources */,
 				8482D4CC1CCB55A400070FAE /* main.m in Sources */,
+				8478C0031CCE33E500358CE1 /* MYCoinViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8482D4D31CCB55A500070FAE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8482D4D41CCB55A500070FAE /* Base */,
-			);
-			name = Main.storyboard;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		8482D4D81CCB55A500070FAE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -574,7 +593,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "底部标签添加发布按钮/Classes/Other/Consinder.pch";
+				GCC_PREFIX_HEADER = "底部标签添加发布按钮/Classes/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "底部标签添加发布按钮/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.520it.----------";
@@ -587,7 +606,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "底部标签添加发布按钮/Classes/Other/Consinder.pch";
+				GCC_PREFIX_HEADER = "底部标签添加发布按钮/Classes/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "底部标签添加发布按钮/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.520it.----------";
