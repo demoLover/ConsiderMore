@@ -41,7 +41,7 @@
     
     //右边 月亮
     
-    UIBarButtonItem *item1 = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-moon-icon"] highlightImage:[UIImage imageNamed:@"mine-moon-icon-click"] target:self action:@selector(moonBtnClick)];
+    UIBarButtonItem *item1 = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-moon-icon"] selectedImage:[UIImage imageNamed:@"mine-moon-icon-click"] target:self action:@selector(moonBtnClick:)];
     
     self.navigationItem.rightBarButtonItems = @[item1,item0];
 
@@ -70,9 +70,9 @@
 /*************** 设置按钮点击 ***************/
 
 /*************** 月亮点击 ***************/
-- (void)moonBtnClick
+- (void)moonBtnClick:(UIButton *)button
 {
-    
+    button.selected = !button.selected;
 }
 /*************** 月亮点击 ***************/
 

@@ -39,7 +39,6 @@
     
     //添加所有控制器
     [self setupAllChildController];
-    NSLog(@"%ld",self.childViewControllers.count);
     
     //替换tabbar
     [self setValue:[[MYTabBar alloc]init] forKey:@"tabBar"];

@@ -16,5 +16,18 @@
 #import "UIView+MYExtension.h"
 #import "UIBarButtonItem+Item.h"
 
+/*************** 屏幕适配 ***************/
+#define MYScreenW [UIScreen mainScreen].bounds.size.width
+#define MYScreenH [UIScreen mainScreen].bounds.size.height
+
+#define iPhone6P (MYScreenH == 736)
+#define iPhone6 (MYScreenH == 667)
+#define iPhone5 (MYScreenH == 568)
+#define iPhone4 (MYScreenH == 480)
+/*************** 屏幕适配 ***************/
+
+//主窗口
+#define MYKeyWindow [UIApplication sharedApplication].keyWindow
+
 
 #endif /* PrefixHeader_pch */

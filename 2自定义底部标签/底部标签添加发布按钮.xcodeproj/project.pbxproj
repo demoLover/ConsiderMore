@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841796291CD0CD3C0053E6FA /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 841796221CD0CD3C0053E6FA /* LaunchImage-568h@2x.png */; };
+		8417962A1CD0CD3C0053E6FA /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 841796231CD0CD3C0053E6FA /* LaunchImage-700-568h@2x.png */; };
+		8417962B1CD0CD3C0053E6FA /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 841796241CD0CD3C0053E6FA /* LaunchImage-700@2x.png */; };
+		8417962C1CD0CD3C0053E6FA /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 841796251CD0CD3C0053E6FA /* LaunchImage-800-667h@2x.png */; };
+		8417962D1CD0CD3C0053E6FA /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 841796261CD0CD3C0053E6FA /* LaunchImage-800-Portrait-736h@3x.png */; };
+		8417962E1CD0CD3C0053E6FA /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 841796271CD0CD3C0053E6FA /* LaunchImage.png */; };
+		8417962F1CD0CD3C0053E6FA /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 841796281CD0CD3C0053E6FA /* LaunchImage@2x.png */; };
+		841796371CD0CDBE0053E6FA /* MYADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841796351CD0CDBE0053E6FA /* MYADViewController.m */; };
+		841796381CD0CDBE0053E6FA /* MYADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841796361CD0CDBE0053E6FA /* MYADViewController.xib */; };
 		8478C0031CCE33E500358CE1 /* MYCoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478C0021CCE33E500358CE1 /* MYCoinViewController.m */; };
 		8482D4CC1CCB55A400070FAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D4CB1CCB55A400070FAE /* main.m */; };
 		8482D4CF1CCB55A500070FAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D4CE1CCB55A500070FAE /* AppDelegate.m */; };
@@ -22,12 +31,26 @@
 		8482D5191CCBBF2B00070FAE /* MYNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D5181CCBBF2B00070FAE /* MYNavViewController.m */; };
 		8482D51D1CCBC75600070FAE /* UIView+MYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D51C1CCBC75600070FAE /* UIView+MYExtension.m */; };
 		848CFF131CCBE014002A8DF9 /* PrefixHeader.pch in Sources */ = {isa = PBXBuildFile; fileRef = 848CFF121CCBDF55002A8DF9 /* PrefixHeader.pch */; };
+		84945AFB1CD0DD5300E5A7B3 /* MYADItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84945AFA1CD0DD5300E5A7B3 /* MYADItem.m */; };
 		84B229FA1CCD08D40078456B /* MYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B229F91CCD08D40078456B /* MYSettingViewController.m */; };
 		84B22A001CCD0A660078456B /* MYSugessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B229FF1CCD0A660078456B /* MYSugessionViewController.m */; };
 		84E02FF11CCCDDBB00B0BF9E /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E02FF01CCCDDBB00B0BF9E /* UIBarButtonItem+Item.m */; };
+		AA5A8312FA228F2D7700D4D8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D329BFFEF19C767FF33BF2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33D329BFFEF19C767FF33BF2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		837E96ECB7006BC3AD62BC3A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		841796221CD0CD3C0053E6FA /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		841796231CD0CD3C0053E6FA /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
+		841796241CD0CD3C0053E6FA /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
+		841796251CD0CD3C0053E6FA /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
+		841796261CD0CD3C0053E6FA /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		841796271CD0CD3C0053E6FA /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		841796281CD0CD3C0053E6FA /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
+		841796341CD0CDBE0053E6FA /* MYADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYADViewController.h; sourceTree = "<group>"; };
+		841796351CD0CDBE0053E6FA /* MYADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYADViewController.m; sourceTree = "<group>"; };
+		841796361CD0CDBE0053E6FA /* MYADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYADViewController.xib; sourceTree = "<group>"; };
 		8478C0011CCE33E500358CE1 /* MYCoinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCoinViewController.h; sourceTree = "<group>"; };
 		8478C0021CCE33E500358CE1 /* MYCoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCoinViewController.m; sourceTree = "<group>"; };
 		8482D4C71CCB55A400070FAE /* 底部标签添加发布按钮.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "底部标签添加发布按钮.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,12 +79,15 @@
 		8482D51B1CCBC75600070FAE /* UIView+MYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MYExtension.h"; sourceTree = "<group>"; };
 		8482D51C1CCBC75600070FAE /* UIView+MYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MYExtension.m"; sourceTree = "<group>"; };
 		848CFF121CCBDF55002A8DF9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		84945AF91CD0DD5300E5A7B3 /* MYADItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYADItem.h; sourceTree = "<group>"; };
+		84945AFA1CD0DD5300E5A7B3 /* MYADItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYADItem.m; sourceTree = "<group>"; };
 		84B229F81CCD08D40078456B /* MYSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSettingViewController.h; sourceTree = "<group>"; };
 		84B229F91CCD08D40078456B /* MYSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSettingViewController.m; sourceTree = "<group>"; };
 		84B229FE1CCD0A660078456B /* MYSugessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSugessionViewController.h; sourceTree = "<group>"; };
 		84B229FF1CCD0A660078456B /* MYSugessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSugessionViewController.m; sourceTree = "<group>"; };
 		84E02FEF1CCCDDBB00B0BF9E /* UIBarButtonItem+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Item.h"; sourceTree = "<group>"; };
 		84E02FF01CCCDDBB00B0BF9E /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
+		BA58DFF13C0DD18B8D843C4F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,17 +95,79 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA5A8312FA228F2D7700D4D8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CB23A66604F2A13574B1FF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA58DFF13C0DD18B8D843C4F /* Pods.debug.xcconfig */,
+				837E96ECB7006BC3AD62BC3A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		841796211CD0CD3C0053E6FA /* 启动图片 */ = {
+			isa = PBXGroup;
+			children = (
+				841796221CD0CD3C0053E6FA /* LaunchImage-568h@2x.png */,
+				841796231CD0CD3C0053E6FA /* LaunchImage-700-568h@2x.png */,
+				841796241CD0CD3C0053E6FA /* LaunchImage-700@2x.png */,
+				841796251CD0CD3C0053E6FA /* LaunchImage-800-667h@2x.png */,
+				841796261CD0CD3C0053E6FA /* LaunchImage-800-Portrait-736h@3x.png */,
+				841796271CD0CD3C0053E6FA /* LaunchImage.png */,
+				841796281CD0CD3C0053E6FA /* LaunchImage@2x.png */,
+			);
+			path = "启动图片";
+			sourceTree = "<group>";
+		};
+		841796301CD0CD990053E6FA /* AD(广告) */ = {
+			isa = PBXGroup;
+			children = (
+				841796311CD0CD990053E6FA /* Controller */,
+				841796321CD0CD990053E6FA /* Model */,
+				841796331CD0CD990053E6FA /* View */,
+			);
+			path = "AD(广告)";
+			sourceTree = "<group>";
+		};
+		841796311CD0CD990053E6FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				841796341CD0CDBE0053E6FA /* MYADViewController.h */,
+				841796351CD0CDBE0053E6FA /* MYADViewController.m */,
+				841796361CD0CDBE0053E6FA /* MYADViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		841796321CD0CD990053E6FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84945AF91CD0DD5300E5A7B3 /* MYADItem.h */,
+				84945AFA1CD0DD5300E5A7B3 /* MYADItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		841796331CD0CD990053E6FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8482D4BE1CCB55A400070FAE = {
 			isa = PBXGroup;
 			children = (
 				8482D4C91CCB55A400070FAE /* 底部标签添加发布按钮 */,
 				8482D4C81CCB55A400070FAE /* Products */,
+				0CB23A66604F2A13574B1FF9 /* Pods */,
+				C6FAEEAC6CA8EC41E089FB19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +194,7 @@
 		8482D4CA1CCB55A400070FAE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				841796211CD0CD3C0053E6FA /* 启动图片 */,
 				8482D4CB1CCB55A400070FAE /* main.m */,
 			);
 			name = "Supporting Files";
@@ -114,6 +203,7 @@
 		8482D4EA1CCBB76300070FAE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				841796301CD0CD990053E6FA /* AD(广告) */,
 				8482D4EB1CCBB76300070FAE /* essence(精华) */,
 				8482D4EF1CCBB76300070FAE /* Foucs(关注) */,
 				8482D4F31CCBB76300070FAE /* Main */,
@@ -403,6 +493,14 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		C6FAEEAC6CA8EC41E089FB19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33D329BFFEF19C767FF33BF2 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -410,9 +508,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8482D4DE1CCB55A500070FAE /* Build configuration list for PBXNativeTarget "底部标签添加发布按钮" */;
 			buildPhases = (
+				ED03765904E34613D4F4BC55 /* Check Pods Manifest.lock */,
 				8482D4C31CCB55A400070FAE /* Sources */,
 				8482D4C41CCB55A400070FAE /* Frameworks */,
 				8482D4C51CCB55A400070FAE /* Resources */,
+				FD240C954463013C8D9836B8 /* Embed Pods Frameworks */,
+				C8C9C4CD3A3B563D01DA2585 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -461,12 +562,68 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8417962E1CD0CD3C0053E6FA /* LaunchImage.png in Resources */,
+				8417962F1CD0CD3C0053E6FA /* LaunchImage@2x.png in Resources */,
 				8482D4DA1CCB55A500070FAE /* LaunchScreen.storyboard in Resources */,
+				841796381CD0CDBE0053E6FA /* MYADViewController.xib in Resources */,
+				8417962C1CD0CD3C0053E6FA /* LaunchImage-800-667h@2x.png in Resources */,
+				841796291CD0CD3C0053E6FA /* LaunchImage-568h@2x.png in Resources */,
+				8417962B1CD0CD3C0053E6FA /* LaunchImage-700@2x.png in Resources */,
+				8417962A1CD0CD3C0053E6FA /* LaunchImage-700-568h@2x.png in Resources */,
 				8482D4D71CCB55A500070FAE /* Assets.xcassets in Resources */,
+				8417962D1CD0CD3C0053E6FA /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C8C9C4CD3A3B563D01DA2585 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED03765904E34613D4F4BC55 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD240C954463013C8D9836B8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8482D4C31CCB55A400070FAE /* Sources */ = {
@@ -480,7 +637,9 @@
 				8482D5191CCBBF2B00070FAE /* MYNavViewController.m in Sources */,
 				8482D4CF1CCB55A500070FAE /* AppDelegate.m in Sources */,
 				8482D4E91CCBAA7600070FAE /* MYTabBar.m in Sources */,
+				84945AFB1CD0DD5300E5A7B3 /* MYADItem.m in Sources */,
 				84B229FA1CCD08D40078456B /* MYSettingViewController.m in Sources */,
+				841796371CD0CDBE0053E6FA /* MYADViewController.m in Sources */,
 				84E02FF11CCCDDBB00B0BF9E /* UIBarButtonItem+Item.m in Sources */,
 				8482D50D1CCBBCD600070FAE /* MYEssenceViewController.m in Sources */,
 				84B22A001CCD0A660078456B /* MYSugessionViewController.m in Sources */,
@@ -590,6 +749,7 @@
 		};
 		8482D4DF1CCB55A500070FAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA58DFF13C0DD18B8D843C4F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -603,6 +763,7 @@
 		};
 		8482D4E01CCB55A500070FAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 837E96ECB7006BC3AD62BC3A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

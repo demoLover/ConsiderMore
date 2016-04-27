@@ -35,9 +35,10 @@
     //左边按钮
 
     
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"MainTagSubIcon"] highlightImage:[UIImage imageNamed:@"MainTagSubIconClick"] target:self action:@selector(leftBtnClick)];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"nav_item_game_icon"] highlightImage:[UIImage imageNamed:@"nav_item_game_click_icon"] target:self action:@selector(leftBtnClick)];
     
     //右边
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"navigationButtonRandom"] highlightImage:[UIImage imageNamed:@"navigationButtonRandomClick"] target:self action:@selector(randomClicked)];
 }
 /*************** 设置导航条内容 ***************/
 
@@ -53,6 +54,13 @@
     // Dispose of any resources that can be recreated.
     
 }
+
+/*************** 右边按钮点击 ***************/
+- (void)randomClicked
+{
+    
+}
+/*************** 右边按钮点击 ***************/
 
 #pragma mark - Table view data source
 

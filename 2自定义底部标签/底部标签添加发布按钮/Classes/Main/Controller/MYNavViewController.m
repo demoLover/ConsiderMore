@@ -14,10 +14,39 @@
 
 @implementation MYNavViewController
 
+#pragma mark 设置字体和背景图
+
++ (void)initialize
+{
+    //获得当前类的所有对象
+    UINavigationBar *bar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[self]];
+    
+    //设置背景图
+    [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    
+    //设置字体
+    NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
+    attrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:20];
+    bar.titleTextAttributes = attrs;
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // 拿到右滑返回手势指示器，并设置代理
-    self.interactivePopGestureRecognizer.delegate = self;
+//    self.interactivePopGestureRecognizer.delegate = self;
+//    NSLog(@"%@",self.interactivePopGestureRecognizer);
+    
+    //改为全屏侧滑返回
+    //添加手势,调用系统侧滑返回的方法
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
+    [self.view addGestureRecognizer:pan];
+    
+    //取消系统的方法
+    self.interactivePopGestureRecognizer.enabled = NO;
+    
+    //设置代理
+    pan.delegate = self;
+    
 }
 
 - (void)didReceiveMemoryWarning {

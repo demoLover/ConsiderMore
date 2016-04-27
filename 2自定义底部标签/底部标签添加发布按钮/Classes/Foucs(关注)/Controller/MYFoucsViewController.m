@@ -26,6 +26,8 @@
 /*************** 设置导航栏 ***************/
 - (void)setupNavgationBar
 {
+    //标题
+    self.navigationItem.title = @"关注";
     //中间
     //左边
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"friendsRecommentIcon"] highlightImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] target:self action:@selector(leftBtnClick)];

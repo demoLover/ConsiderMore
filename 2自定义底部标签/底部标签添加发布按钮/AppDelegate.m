@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MYViewController.h"
+#import "MYADViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,10 +21,11 @@
     //创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   
-    //设置跟控制器
-    self.window.rootViewController = [[MYViewController alloc] init];
+    //设置跟控制器(先展示广告界面)
+    self.window.rootViewController = [[MYADViewController alloc] init];
     //显示窗口
     [self.window makeKeyAndVisible];
+    
     
     return YES;
 }
