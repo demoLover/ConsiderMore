@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MYADViewController.h"
+#import "MYViewController.h"
 
 @interface AppDelegate ()
 

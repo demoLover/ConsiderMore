@@ -32,6 +32,10 @@
 		8482D51D1CCBC75600070FAE /* UIView+MYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D51C1CCBC75600070FAE /* UIView+MYExtension.m */; };
 		848CFF131CCBE014002A8DF9 /* PrefixHeader.pch in Sources */ = {isa = PBXBuildFile; fileRef = 848CFF121CCBDF55002A8DF9 /* PrefixHeader.pch */; };
 		84945AFB1CD0DD5300E5A7B3 /* MYADItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84945AFA1CD0DD5300E5A7B3 /* MYADItem.m */; };
+		84945AFE1CD0F58F00E5A7B3 /* MYTagSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84945AFD1CD0F58F00E5A7B3 /* MYTagSubViewController.m */; };
+		84945B011CD1028800E5A7B3 /* MYTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84945B001CD1028800E5A7B3 /* MYTagItem.m */; };
+		84945B051CD1047E00E5A7B3 /* MYTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84945B031CD1047E00E5A7B3 /* MYTagCell.m */; };
+		84945B061CD1047E00E5A7B3 /* MYTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84945B041CD1047E00E5A7B3 /* MYTagCell.xib */; };
 		84B229FA1CCD08D40078456B /* MYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B229F91CCD08D40078456B /* MYSettingViewController.m */; };
 		84B22A001CCD0A660078456B /* MYSugessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B229FF1CCD0A660078456B /* MYSugessionViewController.m */; };
 		84E02FF11CCCDDBB00B0BF9E /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E02FF01CCCDDBB00B0BF9E /* UIBarButtonItem+Item.m */; };
@@ -81,6 +85,13 @@
 		848CFF121CCBDF55002A8DF9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		84945AF91CD0DD5300E5A7B3 /* MYADItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYADItem.h; sourceTree = "<group>"; };
 		84945AFA1CD0DD5300E5A7B3 /* MYADItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYADItem.m; sourceTree = "<group>"; };
+		84945AFC1CD0F58F00E5A7B3 /* MYTagSubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTagSubViewController.h; sourceTree = "<group>"; };
+		84945AFD1CD0F58F00E5A7B3 /* MYTagSubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTagSubViewController.m; sourceTree = "<group>"; };
+		84945AFF1CD1028800E5A7B3 /* MYTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTagItem.h; sourceTree = "<group>"; };
+		84945B001CD1028800E5A7B3 /* MYTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTagItem.m; sourceTree = "<group>"; };
+		84945B021CD1047E00E5A7B3 /* MYTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTagCell.h; sourceTree = "<group>"; };
+		84945B031CD1047E00E5A7B3 /* MYTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTagCell.m; sourceTree = "<group>"; };
+		84945B041CD1047E00E5A7B3 /* MYTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYTagCell.xib; sourceTree = "<group>"; };
 		84B229F81CCD08D40078456B /* MYSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSettingViewController.h; sourceTree = "<group>"; };
 		84B229F91CCD08D40078456B /* MYSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSettingViewController.m; sourceTree = "<group>"; };
 		84B229FE1CCD0A660078456B /* MYSugessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSugessionViewController.h; sourceTree = "<group>"; };
@@ -232,6 +243,8 @@
 			children = (
 				8482D50B1CCBBCD600070FAE /* MYEssenceViewController.h */,
 				8482D50C1CCBBCD600070FAE /* MYEssenceViewController.m */,
+				84945AFC1CD0F58F00E5A7B3 /* MYTagSubViewController.h */,
+				84945AFD1CD0F58F00E5A7B3 /* MYTagSubViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -239,6 +252,8 @@
 		8482D4ED1CCBB76300070FAE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				84945AFF1CD1028800E5A7B3 /* MYTagItem.h */,
+				84945B001CD1028800E5A7B3 /* MYTagItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -246,6 +261,9 @@
 		8482D4EE1CCBB76300070FAE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84945B021CD1047E00E5A7B3 /* MYTagCell.h */,
+				84945B031CD1047E00E5A7B3 /* MYTagCell.m */,
+				84945B041CD1047E00E5A7B3 /* MYTagCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -562,6 +580,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84945B061CD1047E00E5A7B3 /* MYTagCell.xib in Resources */,
 				8417962E1CD0CD3C0053E6FA /* LaunchImage.png in Resources */,
 				8417962F1CD0CD3C0053E6FA /* LaunchImage@2x.png in Resources */,
 				8482D4DA1CCB55A500070FAE /* LaunchScreen.storyboard in Resources */,
@@ -633,8 +652,11 @@
 				848CFF131CCBE014002A8DF9 /* PrefixHeader.pch in Sources */,
 				8482D51D1CCBC75600070FAE /* UIView+MYExtension.m in Sources */,
 				8482D4E31CCB577C00070FAE /* MYViewController.m in Sources */,
+				84945B051CD1047E00E5A7B3 /* MYTagCell.m in Sources */,
+				84945B011CD1028800E5A7B3 /* MYTagItem.m in Sources */,
 				8482D5161CCBBD4300070FAE /* MYNewViewController.m in Sources */,
 				8482D5191CCBBF2B00070FAE /* MYNavViewController.m in Sources */,
+				84945AFE1CD0F58F00E5A7B3 /* MYTagSubViewController.m in Sources */,
 				8482D4CF1CCB55A500070FAE /* AppDelegate.m in Sources */,
 				8482D4E91CCBAA7600070FAE /* MYTabBar.m in Sources */,
 				84945AFB1CD0DD5300E5A7B3 /* MYADItem.m in Sources */,

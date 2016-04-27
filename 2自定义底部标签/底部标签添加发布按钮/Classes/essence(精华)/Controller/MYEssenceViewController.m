@@ -7,6 +7,7 @@
 //
 
 #import "MYEssenceViewController.h"
+#import "MYTagSubViewController.h"
 
 @interface MYEssenceViewController ()
 
@@ -46,7 +47,9 @@
 /*************** 左按钮点击 ***************/
 - (void)leftBtnClick
 {
+    MYTagSubViewController *tagVC = [[MYTagSubViewController alloc] init];
     
+    [self.navigationController pushViewController:tagVC animated:YES];
 }
 /*************** 左按钮点击 ***************/
 - (void)didReceiveMemoryWarning {

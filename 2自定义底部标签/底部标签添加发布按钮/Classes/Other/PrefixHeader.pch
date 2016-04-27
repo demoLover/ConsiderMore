@@ -29,5 +29,7 @@
 //主窗口
 #define MYKeyWindow [UIApplication sharedApplication].keyWindow
 
+//url
+#define MYBaseUrl @"http://api.budejie.com/api/api_open.php"
 
 #endif /* PrefixHeader_pch */

@@ -16,7 +16,7 @@
 
 #pragma mark 设置字体和背景图
 
-+ (void)initialize
++ (void)load
 {
     //获得当前类的所有对象
     UINavigationBar *bar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[self]];
@@ -58,7 +58,7 @@
 {
     //设置全局返回按钮
     //跟控制器不设置，此时还未push,所以子控制器为0，大于等于1，就不是根控制器了
-    if (self.childViewControllers.count >= 1) {
+    if (self.childViewControllers.count) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         
         [button setImage:[UIImage imageNamed:@"navigationButtonReturn"] forState:UIControlStateNormal];
@@ -83,7 +83,7 @@
 }
 
 #pragma mark 代理方法
-- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
 {
     //根控制器也开始手势会造成程序假死
     if (self.childViewControllers.count == 1) {
