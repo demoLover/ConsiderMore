@@ -68,11 +68,12 @@
         
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+        [button addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchDown];
         
         [button sizeToFit];
         button.contentEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
         
-        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
         
         //push隐藏标签条
         viewController.hidesBottomBarWhenPushed = YES;
@@ -82,6 +83,12 @@
     [super pushViewController:viewController animated:YES];
 }
 
+/*************** 返回按钮业务处理 ***************/
+- (void)back
+{
+    [self popViewControllerAnimated:YES];
+}
+/*************** <#注释#> ***************/
 #pragma mark 代理方法
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
 {

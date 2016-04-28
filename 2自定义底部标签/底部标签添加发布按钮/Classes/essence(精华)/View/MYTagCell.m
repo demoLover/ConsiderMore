@@ -11,7 +11,7 @@
 #import "MYTagItem.h"
 
 @interface MYTagCell ()
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *icon;
 @property (weak, nonatomic) IBOutlet UILabel *titleLable;
 @property (weak, nonatomic) IBOutlet UILabel *subLabel;
 
@@ -19,18 +19,18 @@
 
 @implementation MYTagCell
 
+/*
+ 开发步骤：
+ 发请求获取数据 -》验证数据正确性- >解析数据（字典转模型） - >展示数据（数据决定展示内容和样式） - >细节处理
+ */
 
-
-- (void)awakeFromNib {
-    // Initialization code
-}
 
 - (void)setItem:(MYTagItem *)item
 {
     _item = item;
     
     //设置图片
-    [self.imageView sd_setImageWithURL:[NSURL URLWithString:item.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+    [self.icon sd_setImageWithURL:[NSURL URLWithString:item.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         
         if (image == nil) return ;
         //开启上下文
@@ -66,10 +66,26 @@
     subStr = [subStr stringByReplacingOccurrencesOfString:@".0" withString:@""];
     self.subLabel.text = subStr;
 }
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
+/*************** setFrame ***************/
+
+- (void)setFrame:(CGRect)frame
+{
+    frame.size.height -= 5;
+    
+    //调用父类方法赋值
+    [super setFrame:frame];
 }
+/*************** setFrame ***************/
 
+
+//- (void)layoutSubviews {
+//    [super layoutSubviews];
+//    self.imageView.frame = CGRectMake(10,10,60,60);
+//    float limgW =  self.imageView.image.size.width;
+//    if(limgW > 0) {
+//        self.textLabel.frame = CGRectMake(80,self.textLabel.frame.origin.y,self.textLabel.frame.size.width,self.textLabel.frame.size.height);
+//        self.detailTextLabel.frame = CGRectMake(80,self.detailTextLabel.frame.origin.y,self.detailTextLabel.frame.size.width,self.detailTextLabel.frame.size.height);
+//    }
+//}
 @end

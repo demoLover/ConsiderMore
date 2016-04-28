@@ -31,5 +31,6 @@
 
 //url
 #define MYBaseUrl @"http://api.budejie.com/api/api_open.php"
-
+//颜色
+#define MYColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 #endif /* PrefixHeader_pch */

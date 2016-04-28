@@ -57,7 +57,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="imageView" destination="yK8-CM-KAs" id="KkK-99-zRF"/>
+                <outlet property="icon" destination="yK8-CM-KAs" id="54r-yJ-odd"/>
                 <outlet property="subLabel" destination="qMA-K4-weV" id="q9F-JT-XCY"/>
                 <outlet property="titleLable" destination="7II-O6-qJG" id="2Be-jJ-Krc"/>
             </connections>
