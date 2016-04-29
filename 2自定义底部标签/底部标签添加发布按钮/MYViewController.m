@@ -77,7 +77,8 @@
     [self setupOneChildController:vc4 title:@"关注" image:[UIImage imageNamed:@"tabBar_friendTrends_icon"] selImage:[UIImage imageNamed:@"tabBar_friendTrends_click_icon"]];
     
     //我的
-    MYPersonalViewController *vc5 = [[MYPersonalViewController alloc] init];
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MYPersonalViewController" bundle:nil];
+    MYPersonalViewController *vc5 = [storyBoard instantiateInitialViewController];
     [self setupOneChildController:vc5 title:@"我的" image:[UIImage imageNamed:@"tabBar_me_icon"] selImage:[UIImage imageNamed:@"tabBar_me_click_icon"]];
     
 

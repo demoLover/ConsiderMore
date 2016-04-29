@@ -44,10 +44,14 @@
 		84945B011CD1028800E5A7B3 /* MYTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84945B001CD1028800E5A7B3 /* MYTagItem.m */; };
 		84945B051CD1047E00E5A7B3 /* MYTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84945B031CD1047E00E5A7B3 /* MYTagCell.m */; };
 		84945B061CD1047E00E5A7B3 /* MYTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84945B041CD1047E00E5A7B3 /* MYTagCell.xib */; };
+		84AE330B1CD342990055F879 /* MYPersenalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE33091CD342990055F879 /* MYPersenalCell.m */; };
+		84AE330C1CD342990055F879 /* MYPersenalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AE330A1CD342990055F879 /* MYPersenalCell.xib */; };
+		84AE330F1CD344260055F879 /* MYExcelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE330E1CD344260055F879 /* MYExcelItem.m */; };
 		84B229FA1CCD08D40078456B /* MYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B229F91CCD08D40078456B /* MYSettingViewController.m */; };
 		84B22A001CCD0A660078456B /* MYSugessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B229FF1CCD0A660078456B /* MYSugessionViewController.m */; };
 		84BA510B1CD2EF1A002BA5BF /* MYTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA510A1CD2EF1A002BA5BF /* MYTextFiled.m */; };
 		84BA510E1CD300EE002BA5BF /* UITextField+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA510D1CD300EE002BA5BF /* UITextField+PlaceHolder.m */; };
+		84BA51101CD338A0002BA5BF /* MYPersonalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BA510F1CD338A0002BA5BF /* MYPersonalViewController.storyboard */; };
 		84E02FF11CCCDDBB00B0BF9E /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E02FF01CCCDDBB00B0BF9E /* UIBarButtonItem+Item.m */; };
 		AA5A8312FA228F2D7700D4D8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D329BFFEF19C767FF33BF2 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -114,6 +118,11 @@
 		84945B021CD1047E00E5A7B3 /* MYTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTagCell.h; sourceTree = "<group>"; };
 		84945B031CD1047E00E5A7B3 /* MYTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTagCell.m; sourceTree = "<group>"; };
 		84945B041CD1047E00E5A7B3 /* MYTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYTagCell.xib; sourceTree = "<group>"; };
+		84AE33081CD342990055F879 /* MYPersenalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPersenalCell.h; sourceTree = "<group>"; };
+		84AE33091CD342990055F879 /* MYPersenalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPersenalCell.m; sourceTree = "<group>"; };
+		84AE330A1CD342990055F879 /* MYPersenalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYPersenalCell.xib; sourceTree = "<group>"; };
+		84AE330D1CD344260055F879 /* MYExcelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYExcelItem.h; sourceTree = "<group>"; };
+		84AE330E1CD344260055F879 /* MYExcelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYExcelItem.m; sourceTree = "<group>"; };
 		84B229F81CCD08D40078456B /* MYSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSettingViewController.h; sourceTree = "<group>"; };
 		84B229F91CCD08D40078456B /* MYSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSettingViewController.m; sourceTree = "<group>"; };
 		84B229FE1CCD0A660078456B /* MYSugessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSugessionViewController.h; sourceTree = "<group>"; };
@@ -122,6 +131,7 @@
 		84BA510A1CD2EF1A002BA5BF /* MYTextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTextFiled.m; sourceTree = "<group>"; };
 		84BA510C1CD300EE002BA5BF /* UITextField+PlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PlaceHolder.h"; sourceTree = "<group>"; };
 		84BA510D1CD300EE002BA5BF /* UITextField+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PlaceHolder.m"; sourceTree = "<group>"; };
+		84BA510F1CD338A0002BA5BF /* MYPersonalViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MYPersonalViewController.storyboard; sourceTree = "<group>"; };
 		84E02FEF1CCCDDBB00B0BF9E /* UIBarButtonItem+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Item.h"; sourceTree = "<group>"; };
 		84E02FF01CCCDDBB00B0BF9E /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
 		BA58DFF13C0DD18B8D843C4F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -395,6 +405,7 @@
 			children = (
 				8482D5111CCBBD1D00070FAE /* MYPersonalViewController.h */,
 				8482D5121CCBBD1D00070FAE /* MYPersonalViewController.m */,
+				84BA510F1CD338A0002BA5BF /* MYPersonalViewController.storyboard */,
 				84B229F81CCD08D40078456B /* MYSettingViewController.h */,
 				84B229F91CCD08D40078456B /* MYSettingViewController.m */,
 				8478C0011CCE33E500358CE1 /* MYCoinViewController.h */,
@@ -406,6 +417,8 @@
 		8482D4F91CCBB76300070FAE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				84AE330D1CD344260055F879 /* MYExcelItem.h */,
+				84AE330E1CD344260055F879 /* MYExcelItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -413,6 +426,9 @@
 		8482D4FA1CCBB76300070FAE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84AE33081CD342990055F879 /* MYPersenalCell.h */,
+				84AE33091CD342990055F879 /* MYPersenalCell.m */,
+				84AE330A1CD342990055F879 /* MYPersenalCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -630,9 +646,11 @@
 				8482D4DA1CCB55A500070FAE /* LaunchScreen.storyboard in Resources */,
 				841796381CD0CDBE0053E6FA /* MYADViewController.xib in Resources */,
 				84200AB01CD267E90010E8FA /* MYFastLoginView.xib in Resources */,
+				84AE330C1CD342990055F879 /* MYPersenalCell.xib in Resources */,
 				8417962C1CD0CD3C0053E6FA /* LaunchImage-800-667h@2x.png in Resources */,
 				841796291CD0CD3C0053E6FA /* LaunchImage-568h@2x.png in Resources */,
 				8417962B1CD0CD3C0053E6FA /* LaunchImage-700@2x.png in Resources */,
+				84BA51101CD338A0002BA5BF /* MYPersonalViewController.storyboard in Resources */,
 				8417962A1CD0CD3C0053E6FA /* LaunchImage-700-568h@2x.png in Resources */,
 				8482D4D71CCB55A500070FAE /* Assets.xcassets in Resources */,
 				84200AA61CD23DB60010E8FA /* MYLoginRegistViewController.xib in Resources */,
@@ -698,6 +716,7 @@
 				848CFF131CCBE014002A8DF9 /* PrefixHeader.pch in Sources */,
 				84BA510E1CD300EE002BA5BF /* UITextField+PlaceHolder.m in Sources */,
 				84BA510B1CD2EF1A002BA5BF /* MYTextFiled.m in Sources */,
+				84AE330B1CD342990055F879 /* MYPersenalCell.m in Sources */,
 				8482D51D1CCBC75600070FAE /* UIView+MYExtension.m in Sources */,
 				8482D4E31CCB577C00070FAE /* MYViewController.m in Sources */,
 				84945B051CD1047E00E5A7B3 /* MYTagCell.m in Sources */,
@@ -716,6 +735,7 @@
 				84E02FF11CCCDDBB00B0BF9E /* UIBarButtonItem+Item.m in Sources */,
 				84693F861CD2744900A0B546 /* MYLoginRegistButton.m in Sources */,
 				8482D50D1CCBBCD600070FAE /* MYEssenceViewController.m in Sources */,
+				84AE330F1CD344260055F879 /* MYExcelItem.m in Sources */,
 				84B22A001CCD0A660078456B /* MYSugessionViewController.m in Sources */,
 				8482D4E61CCBA42800070FAE /* MYPresentViewController.m in Sources */,
 				8482D5101CCBBCF600070FAE /* MYFoucsViewController.m in Sources */,
