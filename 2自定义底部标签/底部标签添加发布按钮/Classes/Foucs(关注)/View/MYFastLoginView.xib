@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MYFastLoginView">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="129"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahs-qI-cL0" customClass="MYLoginRegistButton">
+                    <rect key="frame" x="0.0" y="29" width="108" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="dG7-Co-zuZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="微博登录" image="login_sina_icon"/>
+                    <state key="highlighted" title="x新浪微博" image="login_sina_icon_click"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2d-cA-bwq" customClass="MYLoginRegistButton">
+                    <rect key="frame" x="108" y="29" width="107" height="100"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="QQ登录" image="login_QQ_icon"/>
+                    <state key="highlighted" title="QQ登录" image="login_QQ_icon_click"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rns-yb-kWM" customClass="MYLoginRegistButton">
+                    <rect key="frame" x="215" y="29" width="108" height="100"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="腾讯微博" image="login_tecent_icon"/>
+                    <state key="highlighted" title="腾讯微博" image="login_tecent_icon_click"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快速登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Or8-qD-GTu">
+                    <rect key="frame" x="132" y="5" width="60" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Lzo-TI-tFB"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="rin-46-y51"/>
+                        <constraint firstAttribute="height" constant="21" id="wmA-lT-gIY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="login_register_left_line" translatesAutoresizingMaskIntoConstraints="NO" id="ae5-It-bMI">
+                    <rect key="frame" x="0.0" y="0.0" width="132" height="29"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="login_register_right_line" translatesAutoresizingMaskIntoConstraints="NO" id="nBo-GX-Mo8">
+                    <rect key="frame" x="192" y="0.0" width="131" height="29"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Rns-yb-kWM" firstAttribute="bottom" secondItem="K2d-cA-bwq" secondAttribute="bottom" id="8U2-7w-bW7"/>
+                <constraint firstItem="K2d-cA-bwq" firstAttribute="leading" secondItem="Ahs-qI-cL0" secondAttribute="trailing" id="9IO-U1-Hsk"/>
+                <constraint firstAttribute="trailing" secondItem="nBo-GX-Mo8" secondAttribute="trailing" id="AuT-fL-44x"/>
+                <constraint firstItem="K2d-cA-bwq" firstAttribute="height" secondItem="Ahs-qI-cL0" secondAttribute="height" id="EpT-5o-WJI"/>
+                <constraint firstItem="nBo-GX-Mo8" firstAttribute="leading" secondItem="Or8-qD-GTu" secondAttribute="trailing" id="I3n-0d-DjD"/>
+                <constraint firstItem="K2d-cA-bwq" firstAttribute="width" secondItem="Ahs-qI-cL0" secondAttribute="width" id="Jje-YA-9Uq"/>
+                <constraint firstAttribute="bottom" secondItem="Ahs-qI-cL0" secondAttribute="bottom" id="LaR-nU-ZRV"/>
+                <constraint firstItem="Ahs-qI-cL0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Nws-ub-07m"/>
+                <constraint firstItem="ae5-It-bMI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QcG-GG-sDo"/>
+                <constraint firstItem="Or8-qD-GTu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Xea-iv-XEP"/>
+                <constraint firstItem="Rns-yb-kWM" firstAttribute="width" secondItem="K2d-cA-bwq" secondAttribute="width" id="YKQ-yy-Sfj"/>
+                <constraint firstItem="nBo-GX-Mo8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="d9Q-Yn-ojJ"/>
+                <constraint firstItem="Or8-qD-GTu" firstAttribute="leading" secondItem="ae5-It-bMI" secondAttribute="trailing" id="dvY-09-Ltk"/>
+                <constraint firstAttribute="trailing" secondItem="Rns-yb-kWM" secondAttribute="trailing" id="eLf-o0-Yh0"/>
+                <constraint firstItem="K2d-cA-bwq" firstAttribute="bottom" secondItem="Ahs-qI-cL0" secondAttribute="bottom" id="ifS-xq-XrJ"/>
+                <constraint firstItem="Or8-qD-GTu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="tJp-vZ-6aX"/>
+                <constraint firstItem="ae5-It-bMI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vJG-M4-D3i"/>
+                <constraint firstItem="Rns-yb-kWM" firstAttribute="height" secondItem="K2d-cA-bwq" secondAttribute="height" id="wNU-Kf-Wvn"/>
+                <constraint firstItem="Rns-yb-kWM" firstAttribute="leading" secondItem="K2d-cA-bwq" secondAttribute="trailing" id="wpu-V2-aHE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="268.5" y="158.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_QQ_icon" width="70" height="70"/>
+        <image name="login_QQ_icon_click" width="70" height="70"/>
+        <image name="login_register_left_line" width="103" height="1"/>
+        <image name="login_register_right_line" width="103" height="1"/>
+        <image name="login_sina_icon" width="70" height="70"/>
+        <image name="login_sina_icon_click" width="70" height="70"/>
+        <image name="login_tecent_icon" width="70" height="70"/>
+        <image name="login_tecent_icon_click" width="70" height="70"/>
+    </resources>
+</document>
