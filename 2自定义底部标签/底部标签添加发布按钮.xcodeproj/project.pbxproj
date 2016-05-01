@@ -25,6 +25,7 @@
 		84200AB01CD267E90010E8FA /* MYFastLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84200AAF1CD267E90010E8FA /* MYFastLoginView.xib */; };
 		84693F861CD2744900A0B546 /* MYLoginRegistButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84693F851CD2744900A0B546 /* MYLoginRegistButton.m */; };
 		8478C0031CCE33E500358CE1 /* MYCoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478C0021CCE33E500358CE1 /* MYCoinViewController.m */; };
+		848197C21CD5E4F100780E64 /* MYFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 848197C11CD5E4F100780E64 /* MYFileManager.m */; };
 		8482D4CC1CCB55A400070FAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D4CB1CCB55A400070FAE /* main.m */; };
 		8482D4CF1CCB55A500070FAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D4CE1CCB55A500070FAE /* AppDelegate.m */; };
 		8482D4D71CCB55A500070FAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8482D4D61CCB55A500070FAE /* Assets.xcassets */; };
@@ -85,6 +86,8 @@
 		84693F851CD2744900A0B546 /* MYLoginRegistButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLoginRegistButton.m; sourceTree = "<group>"; };
 		8478C0011CCE33E500358CE1 /* MYCoinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCoinViewController.h; sourceTree = "<group>"; };
 		8478C0021CCE33E500358CE1 /* MYCoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCoinViewController.m; sourceTree = "<group>"; };
+		848197C01CD5E4F100780E64 /* MYFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFileManager.h; sourceTree = "<group>"; };
+		848197C11CD5E4F100780E64 /* MYFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFileManager.m; sourceTree = "<group>"; };
 		8482D4C71CCB55A400070FAE /* 底部标签添加发布按钮.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "底部标签添加发布按钮.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8482D4CB1CCB55A400070FAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8482D4CD1CCB55A400070FAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -211,6 +214,15 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		848197BF1CD5E4D400780E64 /* FileTool */ = {
+			isa = PBXGroup;
+			children = (
+				848197C01CD5E4F100780E64 /* MYFileManager.h */,
+				848197C11CD5E4F100780E64 /* MYFileManager.m */,
+			);
+			path = FileTool;
 			sourceTree = "<group>";
 		};
 		8482D4BE1CCB55A400070FAE = {
@@ -573,6 +585,7 @@
 		8482D50A1CCBB76300070FAE /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				848197BF1CD5E4D400780E64 /* FileTool */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -724,6 +737,7 @@
 			files = (
 				848CFF131CCBE014002A8DF9 /* PrefixHeader.pch in Sources */,
 				84BA510E1CD300EE002BA5BF /* UITextField+PlaceHolder.m in Sources */,
+				848197C21CD5E4F100780E64 /* MYFileManager.m in Sources */,
 				84BA510B1CD2EF1A002BA5BF /* MYTextFiled.m in Sources */,
 				84A436561CD479FA00B6A696 /* MYNetTurnViewController.m in Sources */,
 				84AE330B1CD342990055F879 /* MYPersenalCell.m in Sources */,
