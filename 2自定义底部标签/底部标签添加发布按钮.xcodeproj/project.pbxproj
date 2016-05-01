@@ -26,6 +26,17 @@
 		84693F861CD2744900A0B546 /* MYLoginRegistButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84693F851CD2744900A0B546 /* MYLoginRegistButton.m */; };
 		8478C0031CCE33E500358CE1 /* MYCoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478C0021CCE33E500358CE1 /* MYCoinViewController.m */; };
 		848197C21CD5E4F100780E64 /* MYFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 848197C11CD5E4F100780E64 /* MYFileManager.m */; };
+		848197C61CD61A1500780E64 /* MYAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848197C51CD61A1500780E64 /* MYAllViewController.m */; };
+		848197C91CD61A2700780E64 /* MYVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848197C81CD61A2700780E64 /* MYVideoViewController.m */; };
+		848197CC1CD61A4E00780E64 /* MYVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848197CB1CD61A4E00780E64 /* MYVoiceViewController.m */; };
+		848197CF1CD61A5D00780E64 /* MYPictureTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848197CE1CD61A5D00780E64 /* MYPictureTableViewController.m */; };
+		848197D21CD61A7800780E64 /* MYTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848197D11CD61A7800780E64 /* MYTextViewController.m */; };
+		848197D51CD62D7B00780E64 /* MYBaseMenusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848197D41CD62D7B00780E64 /* MYBaseMenusViewController.m */; };
+		848197E01CD633E200780E64 /* MYBaseMenusViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 848197D31CD62D7B00780E64 /* MYBaseMenusViewController.h */; };
+		848197E11CD6345400780E64 /* MYVideoViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 848197C71CD61A2700780E64 /* MYVideoViewController.h */; };
+		848197E51CD634C600780E64 /* MYNewAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848197E41CD634C600780E64 /* MYNewAllViewController.m */; };
+		848197E81CD634D900780E64 /* MYNewVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848197E71CD634D900780E64 /* MYNewVideoViewController.m */; };
+		848197EB1CD634EF00780E64 /* MYNewPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848197EA1CD634EF00780E64 /* MYNewPictureViewController.m */; };
 		8482D4CC1CCB55A400070FAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D4CB1CCB55A400070FAE /* main.m */; };
 		8482D4CF1CCB55A500070FAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482D4CE1CCB55A500070FAE /* AppDelegate.m */; };
 		8482D4D71CCB55A500070FAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8482D4D61CCB55A500070FAE /* Assets.xcassets */; };
@@ -88,6 +99,24 @@
 		8478C0021CCE33E500358CE1 /* MYCoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCoinViewController.m; sourceTree = "<group>"; };
 		848197C01CD5E4F100780E64 /* MYFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFileManager.h; sourceTree = "<group>"; };
 		848197C11CD5E4F100780E64 /* MYFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFileManager.m; sourceTree = "<group>"; };
+		848197C41CD61A1500780E64 /* MYAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAllViewController.h; sourceTree = "<group>"; };
+		848197C51CD61A1500780E64 /* MYAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAllViewController.m; sourceTree = "<group>"; };
+		848197C71CD61A2700780E64 /* MYVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYVideoViewController.h; sourceTree = "<group>"; };
+		848197C81CD61A2700780E64 /* MYVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYVideoViewController.m; sourceTree = "<group>"; };
+		848197CA1CD61A4E00780E64 /* MYVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYVoiceViewController.h; sourceTree = "<group>"; };
+		848197CB1CD61A4E00780E64 /* MYVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYVoiceViewController.m; sourceTree = "<group>"; };
+		848197CD1CD61A5D00780E64 /* MYPictureTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPictureTableViewController.h; sourceTree = "<group>"; };
+		848197CE1CD61A5D00780E64 /* MYPictureTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPictureTableViewController.m; sourceTree = "<group>"; };
+		848197D01CD61A7800780E64 /* MYTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTextViewController.h; sourceTree = "<group>"; };
+		848197D11CD61A7800780E64 /* MYTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTextViewController.m; sourceTree = "<group>"; };
+		848197D31CD62D7B00780E64 /* MYBaseMenusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBaseMenusViewController.h; sourceTree = "<group>"; };
+		848197D41CD62D7B00780E64 /* MYBaseMenusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBaseMenusViewController.m; sourceTree = "<group>"; };
+		848197E31CD634C600780E64 /* MYNewAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNewAllViewController.h; sourceTree = "<group>"; };
+		848197E41CD634C600780E64 /* MYNewAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNewAllViewController.m; sourceTree = "<group>"; };
+		848197E61CD634D900780E64 /* MYNewVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNewVideoViewController.h; sourceTree = "<group>"; };
+		848197E71CD634D900780E64 /* MYNewVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNewVideoViewController.m; sourceTree = "<group>"; };
+		848197E91CD634EF00780E64 /* MYNewPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNewPictureViewController.h; sourceTree = "<group>"; };
+		848197EA1CD634EF00780E64 /* MYNewPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNewPictureViewController.m; sourceTree = "<group>"; };
 		8482D4C71CCB55A400070FAE /* 底部标签添加发布按钮.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "底部标签添加发布按钮.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8482D4CB1CCB55A400070FAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8482D4CD1CCB55A400070FAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -225,6 +254,36 @@
 			path = FileTool;
 			sourceTree = "<group>";
 		};
+		848197C31CD619F900780E64 /* childController */ = {
+			isa = PBXGroup;
+			children = (
+				848197C41CD61A1500780E64 /* MYAllViewController.h */,
+				848197C51CD61A1500780E64 /* MYAllViewController.m */,
+				848197C71CD61A2700780E64 /* MYVideoViewController.h */,
+				848197C81CD61A2700780E64 /* MYVideoViewController.m */,
+				848197CA1CD61A4E00780E64 /* MYVoiceViewController.h */,
+				848197CB1CD61A4E00780E64 /* MYVoiceViewController.m */,
+				848197CD1CD61A5D00780E64 /* MYPictureTableViewController.h */,
+				848197CE1CD61A5D00780E64 /* MYPictureTableViewController.m */,
+				848197D01CD61A7800780E64 /* MYTextViewController.h */,
+				848197D11CD61A7800780E64 /* MYTextViewController.m */,
+			);
+			path = childController;
+			sourceTree = "<group>";
+		};
+		848197D61CD6322200780E64 /* childController */ = {
+			isa = PBXGroup;
+			children = (
+				848197E31CD634C600780E64 /* MYNewAllViewController.h */,
+				848197E41CD634C600780E64 /* MYNewAllViewController.m */,
+				848197E61CD634D900780E64 /* MYNewVideoViewController.h */,
+				848197E71CD634D900780E64 /* MYNewVideoViewController.m */,
+				848197E91CD634EF00780E64 /* MYNewPictureViewController.h */,
+				848197EA1CD634EF00780E64 /* MYNewPictureViewController.m */,
+			);
+			path = childController;
+			sourceTree = "<group>";
+		};
 		8482D4BE1CCB55A400070FAE = {
 			isa = PBXGroup;
 			children = (
@@ -294,10 +353,13 @@
 		8482D4EC1CCBB76300070FAE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				848197C31CD619F900780E64 /* childController */,
 				8482D50B1CCBBCD600070FAE /* MYEssenceViewController.h */,
 				8482D50C1CCBBCD600070FAE /* MYEssenceViewController.m */,
 				84945AFC1CD0F58F00E5A7B3 /* MYTagSubViewController.h */,
 				84945AFD1CD0F58F00E5A7B3 /* MYTagSubViewController.m */,
+				848197D31CD62D7B00780E64 /* MYBaseMenusViewController.h */,
+				848197D41CD62D7B00780E64 /* MYBaseMenusViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -466,6 +528,7 @@
 		8482D4FC1CCBB76300070FAE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				848197D61CD6322200780E64 /* childController */,
 				8482D5141CCBBD4300070FAE /* MYNewViewController.h */,
 				8482D5151CCBBD4300070FAE /* MYNewViewController.m */,
 			);
@@ -735,8 +798,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848197E11CD6345400780E64 /* MYVideoViewController.h in Sources */,
+				848197E01CD633E200780E64 /* MYBaseMenusViewController.h in Sources */,
 				848CFF131CCBE014002A8DF9 /* PrefixHeader.pch in Sources */,
 				84BA510E1CD300EE002BA5BF /* UITextField+PlaceHolder.m in Sources */,
+				848197CF1CD61A5D00780E64 /* MYPictureTableViewController.m in Sources */,
+				848197C91CD61A2700780E64 /* MYVideoViewController.m in Sources */,
+				848197EB1CD634EF00780E64 /* MYNewPictureViewController.m in Sources */,
 				848197C21CD5E4F100780E64 /* MYFileManager.m in Sources */,
 				84BA510B1CD2EF1A002BA5BF /* MYTextFiled.m in Sources */,
 				84A436561CD479FA00B6A696 /* MYNetTurnViewController.m in Sources */,
@@ -744,16 +812,20 @@
 				8482D51D1CCBC75600070FAE /* UIView+MYExtension.m in Sources */,
 				8482D4E31CCB577C00070FAE /* MYViewController.m in Sources */,
 				84945B051CD1047E00E5A7B3 /* MYTagCell.m in Sources */,
+				848197D51CD62D7B00780E64 /* MYBaseMenusViewController.m in Sources */,
 				84200AA51CD23DB60010E8FA /* MYLoginRegistViewController.m in Sources */,
 				84945B011CD1028800E5A7B3 /* MYTagItem.m in Sources */,
 				8482D5161CCBBD4300070FAE /* MYNewViewController.m in Sources */,
 				8482D5191CCBBF2B00070FAE /* MYNavViewController.m in Sources */,
 				84945AFE1CD0F58F00E5A7B3 /* MYTagSubViewController.m in Sources */,
+				848197C61CD61A1500780E64 /* MYAllViewController.m in Sources */,
 				8482D4CF1CCB55A500070FAE /* AppDelegate.m in Sources */,
 				8482D4E91CCBAA7600070FAE /* MYTabBar.m in Sources */,
 				84945AFB1CD0DD5300E5A7B3 /* MYADItem.m in Sources */,
 				84200AAE1CD267D30010E8FA /* MYFastLoginView.m in Sources */,
 				84200AA91CD248900010E8FA /* MYLoginRegistView.m in Sources */,
+				848197CC1CD61A4E00780E64 /* MYVoiceViewController.m in Sources */,
+				848197E81CD634D900780E64 /* MYNewVideoViewController.m in Sources */,
 				8482D4E61CCBA42800070FAE /* MYPresentViewController.m in Sources */,
 				84B229FA1CCD08D40078456B /* MYSettingViewController.m in Sources */,
 				841796371CD0CDBE0053E6FA /* MYADViewController.m in Sources */,
@@ -762,6 +834,8 @@
 				8482D50D1CCBBCD600070FAE /* MYEssenceViewController.m in Sources */,
 				84AE330F1CD344260055F879 /* MYExcelItem.m in Sources */,
 				84B22A001CCD0A660078456B /* MYSugessionViewController.m in Sources */,
+				848197D21CD61A7800780E64 /* MYTextViewController.m in Sources */,
+				848197E51CD634C600780E64 /* MYNewAllViewController.m in Sources */,
 				8482D5101CCBBCF600070FAE /* MYFoucsViewController.m in Sources */,
 				8482D5131CCBBD1D00070FAE /* MYPersonalViewController.m in Sources */,
 				8482D4CC1CCB55A400070FAE /* main.m in Sources */,

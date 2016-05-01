@@ -1,98 +1,29 @@
 //
-//  MYNewViewController.m
+//  MYVoiceViewController.m
 //  底部标签添加发布按钮
 //
-//  Created by admin on 16/4/23.
+//  Created by admin on 16/5/1.
 //  Copyright © 2016年 程涛. All rights reserved.
 //
 
-#import "MYNewViewController.h"
+#import "MYVoiceViewController.h"
 
-#import "MYNewAllViewController.h"
-#import "MYNewVideoViewController.h"
-#import "MYNewPictureViewController.h"
-
-@interface MYNewViewController ()
+@interface MYVoiceViewController ()
 
 @end
 
-@implementation MYNewViewController
+@implementation MYVoiceViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
-    
-    //设置导航条
-    [self setupNavgationBar];
-    
-    //添加子控制器
-    [self setupAllChildController];
+    self.view.backgroundColor = MYColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256));
 }
 
-/*************** 设置导航条 ***************/
-- (void)setupNavgationBar
-{
-    //背景颜色
-    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
-    
-    //中间标题
-    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
-    
-    //左边按钮
-    UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    
-    [leftBtn setImage:[UIImage imageNamed:@"MainTagSubIcon"] forState:UIControlStateNormal];
-    [leftBtn setImage:[UIImage imageNamed:@"MainTagSubIconClick"] forState:UIControlStateHighlighted];
-    [leftBtn addTarget:self action:@selector(leftBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    
-    [leftBtn sizeToFit];
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
-    
-    //右边
-}
-
-/*************** 设置导航条 ***************/
-
-
-/*************** 左按钮点击 ***************/
-
-- (void)leftBtnClick
-{
-    
-}
-/*************** 左按钮点击 ***************/
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*************** 添加子控制器 ***************/
-
-- (void)setupAllChildController
-{
-    //全部
-    MYNewAllViewController *allVC = [[MYNewAllViewController alloc] init];
-    allVC.title = @"全部";
-    [self addChildViewController:allVC];
-    
-    
-    //视频
-    MYNewVideoViewController *videoVC = [[MYNewVideoViewController alloc] init];
-    videoVC.title = @"视频";
-    [self addChildViewController:videoVC];
-    
-   
-    
-    //图片
-    MYNewPictureViewController *picVC = [[MYNewPictureViewController alloc] init];
-    picVC.title = @"图片";
-    [self addChildViewController:picVC];
-    
-   
-
-}
-/*************** 添加子控制器 ***************/
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
