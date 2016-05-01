@@ -14,6 +14,7 @@
 #import <MJExtension/MJExtension.h>
 #import <UIImageView+WebCache.h>
 #import "MYExcelItem.h"
+#import "MYNetTurnViewController.h"
 
 
 static NSString * const ID = @"cell";
@@ -21,7 +22,7 @@ static float const margin = 1;
 static NSInteger const cols = 4;
 #define wh ((MYScreenW - (cols - 1) * margin ) / cols)
 
-@interface MYPersonalViewController ()<UICollectionViewDataSource>
+@interface MYPersonalViewController ()<UICollectionViewDataSource ,UICollectionViewDelegate>
 //底部视图
 @property (nonatomic, weak) UICollectionView *footView;
 //模型数组
@@ -123,6 +124,7 @@ static NSInteger const cols = 4;
     footerView.backgroundColor = self.tableView.backgroundColor;
 
     footerView.dataSource = self;
+    footerView.delegate = self;
     footerView.bounces = NO;
     //注册cell
     [footerView registerNib:[UINib nibWithNibName:@"MYPersenalCell" bundle:nil] forCellWithReuseIdentifier:ID];
@@ -170,6 +172,25 @@ static NSInteger const cols = 4;
 }
 /***************  设置导航栏  ***************/
 
+
+#pragma mark delegate
+
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    MYNetTurnViewController *webVC = [[MYNetTurnViewController alloc] init];
+    MYExcelItem *item = self.itemArray[indexPath.row];
+    webVC.item = item;
+    
+    //排除不是网页的
+    if (![item.url containsString:@"http"]) return;
+    [self.navigationController pushViewController:webVC animated:YES];
+}
+
+
+
+
+
 /*************** 左按钮点击 ***************/
 
 - (void)leftBtnClick
@@ -206,58 +227,5 @@ static NSInteger const cols = 4;
 
 
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

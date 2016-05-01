@@ -44,6 +44,8 @@
 		84945B011CD1028800E5A7B3 /* MYTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84945B001CD1028800E5A7B3 /* MYTagItem.m */; };
 		84945B051CD1047E00E5A7B3 /* MYTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84945B031CD1047E00E5A7B3 /* MYTagCell.m */; };
 		84945B061CD1047E00E5A7B3 /* MYTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84945B041CD1047E00E5A7B3 /* MYTagCell.xib */; };
+		84A436561CD479FA00B6A696 /* MYNetTurnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A436541CD479FA00B6A696 /* MYNetTurnViewController.m */; };
+		84A436571CD479FA00B6A696 /* MYNetTurnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A436551CD479FA00B6A696 /* MYNetTurnViewController.xib */; };
 		84AE330B1CD342990055F879 /* MYPersenalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE33091CD342990055F879 /* MYPersenalCell.m */; };
 		84AE330C1CD342990055F879 /* MYPersenalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AE330A1CD342990055F879 /* MYPersenalCell.xib */; };
 		84AE330F1CD344260055F879 /* MYExcelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE330E1CD344260055F879 /* MYExcelItem.m */; };
@@ -118,6 +120,9 @@
 		84945B021CD1047E00E5A7B3 /* MYTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTagCell.h; sourceTree = "<group>"; };
 		84945B031CD1047E00E5A7B3 /* MYTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTagCell.m; sourceTree = "<group>"; };
 		84945B041CD1047E00E5A7B3 /* MYTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYTagCell.xib; sourceTree = "<group>"; };
+		84A436531CD479FA00B6A696 /* MYNetTurnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNetTurnViewController.h; sourceTree = "<group>"; };
+		84A436541CD479FA00B6A696 /* MYNetTurnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNetTurnViewController.m; sourceTree = "<group>"; };
+		84A436551CD479FA00B6A696 /* MYNetTurnViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYNetTurnViewController.xib; sourceTree = "<group>"; };
 		84AE33081CD342990055F879 /* MYPersenalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPersenalCell.h; sourceTree = "<group>"; };
 		84AE33091CD342990055F879 /* MYPersenalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPersenalCell.m; sourceTree = "<group>"; };
 		84AE330A1CD342990055F879 /* MYPersenalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYPersenalCell.xib; sourceTree = "<group>"; };
@@ -410,6 +415,9 @@
 				84B229F91CCD08D40078456B /* MYSettingViewController.m */,
 				8478C0011CCE33E500358CE1 /* MYCoinViewController.h */,
 				8478C0021CCE33E500358CE1 /* MYCoinViewController.m */,
+				84A436531CD479FA00B6A696 /* MYNetTurnViewController.h */,
+				84A436541CD479FA00B6A696 /* MYNetTurnViewController.m */,
+				84A436551CD479FA00B6A696 /* MYNetTurnViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -641,6 +649,7 @@
 				84945B061CD1047E00E5A7B3 /* MYTagCell.xib in Resources */,
 				8417962E1CD0CD3C0053E6FA /* LaunchImage.png in Resources */,
 				8417962F1CD0CD3C0053E6FA /* LaunchImage@2x.png in Resources */,
+				84A436571CD479FA00B6A696 /* MYNetTurnViewController.xib in Resources */,
 				84200AA11CD232260010E8FA /* MYFoucsViewController.xib in Resources */,
 				84200AAB1CD248A10010E8FA /* MYLoginRegistView.xib in Resources */,
 				8482D4DA1CCB55A500070FAE /* LaunchScreen.storyboard in Resources */,
@@ -716,6 +725,7 @@
 				848CFF131CCBE014002A8DF9 /* PrefixHeader.pch in Sources */,
 				84BA510E1CD300EE002BA5BF /* UITextField+PlaceHolder.m in Sources */,
 				84BA510B1CD2EF1A002BA5BF /* MYTextFiled.m in Sources */,
+				84A436561CD479FA00B6A696 /* MYNetTurnViewController.m in Sources */,
 				84AE330B1CD342990055F879 /* MYPersenalCell.m in Sources */,
 				8482D51D1CCBC75600070FAE /* UIView+MYExtension.m in Sources */,
 				8482D4E31CCB577C00070FAE /* MYViewController.m in Sources */,
@@ -730,6 +740,7 @@
 				84945AFB1CD0DD5300E5A7B3 /* MYADItem.m in Sources */,
 				84200AAE1CD267D30010E8FA /* MYFastLoginView.m in Sources */,
 				84200AA91CD248900010E8FA /* MYLoginRegistView.m in Sources */,
+				8482D4E61CCBA42800070FAE /* MYPresentViewController.m in Sources */,
 				84B229FA1CCD08D40078456B /* MYSettingViewController.m in Sources */,
 				841796371CD0CDBE0053E6FA /* MYADViewController.m in Sources */,
 				84E02FF11CCCDDBB00B0BF9E /* UIBarButtonItem+Item.m in Sources */,
@@ -737,7 +748,6 @@
 				8482D50D1CCBBCD600070FAE /* MYEssenceViewController.m in Sources */,
 				84AE330F1CD344260055F879 /* MYExcelItem.m in Sources */,
 				84B22A001CCD0A660078456B /* MYSugessionViewController.m in Sources */,
-				8482D4E61CCBA42800070FAE /* MYPresentViewController.m in Sources */,
 				8482D5101CCBBCF600070FAE /* MYFoucsViewController.m in Sources */,
 				8482D5131CCBBD1D00070FAE /* MYPersonalViewController.m in Sources */,
 				8482D4CC1CCB55A400070FAE /* main.m in Sources */,
