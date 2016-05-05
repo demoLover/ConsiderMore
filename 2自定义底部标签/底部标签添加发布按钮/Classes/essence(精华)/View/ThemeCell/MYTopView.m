@@ -20,9 +20,34 @@
 @property (weak, nonatomic) IBOutlet UILabel *textLabel;
 @end
 
-
+/*
+ 业务逻辑处理：点击更多按钮，要从底部弹出对话框，而且，更多按钮在顶部view，因此就找到顶部按钮处理
+ */
 @implementation MYTopView
 
+- (IBAction)moreButtonClicked {
+    /*
+    //方案一：用UIActionSheet
+    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:nil cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"收藏",@"举报", nil];
+    [sheet showInView:self];
+     */
+    //方案二：用UIAlertController，要添加UIAlertAction modal出来出来，最快的方法就是拿到根控制器，不用用代理通知麻烦，要多层传递
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction *action0 = [UIAlertAction actionWithTitle:@"收藏" style:UIPreviewActionStyleDefault handler:nil];
+    [alert addAction:action0];
+    
+    UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"举报" style:UIPreviewActionStyleDefault handler:nil];
+    [alert addAction:action1];
+    
+    UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"取消" style:UIPreviewActionStyleDestructive handler:nil];
+    [alert addAction:action2];
+    
+    //modal
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:^{
+        
+    }];
+}
 
 - (void)awakeFromNib
 {
