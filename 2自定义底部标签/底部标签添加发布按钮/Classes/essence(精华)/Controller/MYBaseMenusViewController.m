@@ -90,6 +90,8 @@ static NSString *ID = @"essence";
     
     collectionView.backgroundColor = [UIColor greenColor];
     collectionView.showsHorizontalScrollIndicator = NO;
+
+
     collectionView.pagingEnabled = YES;
     collectionView.dataSource = self;
     collectionView.delegate = self;

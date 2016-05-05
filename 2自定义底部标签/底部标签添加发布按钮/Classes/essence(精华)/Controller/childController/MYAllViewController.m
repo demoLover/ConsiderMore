@@ -7,87 +7,109 @@
 //
 
 #import "MYAllViewController.h"
+#import "MYThemeCell.h"
+#import <AFNetworking/AFNetworking.h>
+#import "MYThemeItem.h"
+#import <MJExtension/MJExtension.h>
+#import "MYThemeViewModel.h"
 
 @interface MYAllViewController ()
+//模型数组
+//@property (nonatomic, strong) NSMutableArray *itemArray;
+
+//视图模型数组
+@property (nonatomic, strong) NSArray *themeVMArrar;
+
 
 @end
 
+static NSString * const ID = @"theme";
 @implementation MYAllViewController
 
+/*
+ cell细节处理
+ 1.cell间距
+ 2.cell没有选中样式
+ 3、cell的背景图片
+ 
+ */
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = MYColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256));
+    self.view.backgroundColor = MYColor(206, 206, 206);
+    //注册cell
+    [self.tableView registerClass:[MYThemeCell class] forCellReuseIdentifier:ID];
+    
+    //设置偏移量
+    self.tableView.contentInset = UIEdgeInsetsMake(64 + 35, 0, 49, 0);
+    
+    //加载数据
+    [self loadData];
+    
+    //取消系统的分割线
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+/*************** 请求数据 ***************/
+- (void)loadData
+{
+    //获取会话管理者
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    //拼接参数
+    NSMutableDictionary *pramaters = [NSMutableDictionary dictionary];
+    pramaters[@"a"] = @"list";
+    pramaters[@"c"] = @"data";
+    pramaters[@"type"] = @"10";
+
+    //发送请求并解析数据
+    [manager GET:MYBaseUrl parameters:pramaters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [responseObject writeToFile:@"/Users/admin/Desktop/123.plist" atomically:YES];
+        NSArray *dictArr = responseObject[@"list"];
+        //转模型数组
+        NSArray *themeArray = [MYThemeItem mj_objectArrayWithKeyValuesArray:dictArr];
+        
+        //模型数组转化为视图模型数组
+        NSMutableArray *tempArray = [NSMutableArray array];
+        for (MYThemeItem *item in themeArray) {
+            //创建视图模型
+            MYThemeViewModel *themeVM = [[MYThemeViewModel alloc] init];
+            themeVM.item = item; //调用了setitem方法
+            [tempArray addObject:themeVM];
+        }
+        
+        self.themeVMArrar = tempArray;
+        //刷新数据
+        [self.tableView reloadData];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
 }
+/*************** 请求数据 ***************/
+
+
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    return self.themeVMArrar.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    MYThemeCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
     
-    // Configure the cell...
+    cell.themeVM = self.themeVMArrar[indexPath.row];
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [self.themeVMArrar[indexPath.row] cellH];
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

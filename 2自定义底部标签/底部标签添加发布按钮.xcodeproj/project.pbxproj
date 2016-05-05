@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841250211CD83D2100855358 /* MYLoadImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 841250201CD83D2100855358 /* MYLoadImageManager.m */; };
 		841796291CD0CD3C0053E6FA /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 841796221CD0CD3C0053E6FA /* LaunchImage-568h@2x.png */; };
 		8417962A1CD0CD3C0053E6FA /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 841796231CD0CD3C0053E6FA /* LaunchImage-700-568h@2x.png */; };
 		8417962B1CD0CD3C0053E6FA /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 841796241CD0CD3C0053E6FA /* LaunchImage-700@2x.png */; };
@@ -24,6 +25,15 @@
 		84200AAE1CD267D30010E8FA /* MYFastLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84200AAD1CD267D30010E8FA /* MYFastLoginView.m */; };
 		84200AB01CD267E90010E8FA /* MYFastLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84200AAF1CD267E90010E8FA /* MYFastLoginView.xib */; };
 		84693F861CD2744900A0B546 /* MYLoginRegistButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84693F851CD2744900A0B546 /* MYLoginRegistButton.m */; };
+		8471ECFF1CDA17A9008527BB /* MYBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8471ECFE1CDA17A9008527BB /* MYBaseView.m */; };
+		8471ED021CDA1860008527BB /* MYVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8471ED011CDA1860008527BB /* MYVoiceView.m */; };
+		8471ED041CDA186F008527BB /* MYVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8471ED031CDA186F008527BB /* MYVoiceView.xib */; };
+		8471ED071CDA25AE008527BB /* MYVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8471ED061CDA25AE008527BB /* MYVideoView.m */; };
+		8471ED091CDA25C8008527BB /* MYVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8471ED081CDA25C8008527BB /* MYVideoView.xib */; };
+		8471ED0C1CDA4C21008527BB /* MYCommentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8471ED0B1CDA4C21008527BB /* MYCommentItem.m */; };
+		8471ED0F1CDA4CA5008527BB /* MYUserItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8471ED0E1CDA4CA5008527BB /* MYUserItem.m */; };
+		8471ED121CDA4F04008527BB /* MYHotCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8471ED111CDA4F04008527BB /* MYHotCommentView.m */; };
+		8471ED141CDA4F18008527BB /* MYHotCommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8471ED131CDA4F18008527BB /* MYHotCommentView.xib */; };
 		8478C0031CCE33E500358CE1 /* MYCoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478C0021CCE33E500358CE1 /* MYCoinViewController.m */; };
 		848197C21CD5E4F100780E64 /* MYFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 848197C11CD5E4F100780E64 /* MYFileManager.m */; };
 		848197C61CD61A1500780E64 /* MYAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848197C51CD61A1500780E64 /* MYAllViewController.m */; };
@@ -58,11 +68,21 @@
 		84945B061CD1047E00E5A7B3 /* MYTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84945B041CD1047E00E5A7B3 /* MYTagCell.xib */; };
 		84A436561CD479FA00B6A696 /* MYNetTurnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A436541CD479FA00B6A696 /* MYNetTurnViewController.m */; };
 		84A436571CD479FA00B6A696 /* MYNetTurnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A436551CD479FA00B6A696 /* MYNetTurnViewController.xib */; };
+		84A79CEB1CDB637B008307CB /* MYBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A79CEA1CDB637B008307CB /* MYBottomView.m */; };
+		84A79CED1CDB6392008307CB /* MYBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A79CEC1CDB6392008307CB /* MYBottomView.xib */; };
+		84A79CF01CDB81F5008307CB /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A79CEF1CDB81F5008307CB /* UIImage+Image.m */; };
 		84AE330B1CD342990055F879 /* MYPersenalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE33091CD342990055F879 /* MYPersenalCell.m */; };
 		84AE330C1CD342990055F879 /* MYPersenalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AE330A1CD342990055F879 /* MYPersenalCell.xib */; };
 		84AE330F1CD344260055F879 /* MYExcelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AE330E1CD344260055F879 /* MYExcelItem.m */; };
 		84B229FA1CCD08D40078456B /* MYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B229F91CCD08D40078456B /* MYSettingViewController.m */; };
 		84B22A001CCD0A660078456B /* MYSugessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B229FF1CCD0A660078456B /* MYSugessionViewController.m */; };
+		84B55C251CD769E300C71AD2 /* MYThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B55C241CD769E300C71AD2 /* MYThemeCell.m */; };
+		84B55C281CD76C5E00C71AD2 /* MYThemeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B55C271CD76C5E00C71AD2 /* MYThemeItem.m */; };
+		84B55C301CD776DA00C71AD2 /* MYTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B55C2F1CD776DA00C71AD2 /* MYTopView.m */; };
+		84B55C321CD776EB00C71AD2 /* MYTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B55C311CD776EB00C71AD2 /* MYTopView.xib */; };
+		84B55C361CD7811600C71AD2 /* MYThemeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B55C351CD7811600C71AD2 /* MYThemeViewModel.m */; };
+		84B55C391CD7981000C71AD2 /* MYPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B55C381CD7981000C71AD2 /* MYPictureView.m */; };
+		84B55C3B1CD7982600C71AD2 /* MYPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B55C3A1CD7982600C71AD2 /* MYPictureView.xib */; };
 		84BA510B1CD2EF1A002BA5BF /* MYTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA510A1CD2EF1A002BA5BF /* MYTextFiled.m */; };
 		84BA510E1CD300EE002BA5BF /* UITextField+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA510D1CD300EE002BA5BF /* UITextField+PlaceHolder.m */; };
 		84BA51101CD338A0002BA5BF /* MYPersonalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BA510F1CD338A0002BA5BF /* MYPersonalViewController.storyboard */; };
@@ -73,6 +93,8 @@
 /* Begin PBXFileReference section */
 		33D329BFFEF19C767FF33BF2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		837E96ECB7006BC3AD62BC3A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8412501F1CD83D2100855358 /* MYLoadImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLoadImageManager.h; sourceTree = "<group>"; };
+		841250201CD83D2100855358 /* MYLoadImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLoadImageManager.m; sourceTree = "<group>"; };
 		841796221CD0CD3C0053E6FA /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
 		841796231CD0CD3C0053E6FA /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
 		841796241CD0CD3C0053E6FA /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
@@ -95,6 +117,21 @@
 		84200AAF1CD267E90010E8FA /* MYFastLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYFastLoginView.xib; sourceTree = "<group>"; };
 		84693F841CD2744900A0B546 /* MYLoginRegistButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLoginRegistButton.h; sourceTree = "<group>"; };
 		84693F851CD2744900A0B546 /* MYLoginRegistButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLoginRegistButton.m; sourceTree = "<group>"; };
+		8471ECFD1CDA17A9008527BB /* MYBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBaseView.h; sourceTree = "<group>"; };
+		8471ECFE1CDA17A9008527BB /* MYBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBaseView.m; sourceTree = "<group>"; };
+		8471ED001CDA1860008527BB /* MYVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYVoiceView.h; sourceTree = "<group>"; };
+		8471ED011CDA1860008527BB /* MYVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYVoiceView.m; sourceTree = "<group>"; };
+		8471ED031CDA186F008527BB /* MYVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYVoiceView.xib; sourceTree = "<group>"; };
+		8471ED051CDA25AE008527BB /* MYVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYVideoView.h; sourceTree = "<group>"; };
+		8471ED061CDA25AE008527BB /* MYVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYVideoView.m; sourceTree = "<group>"; };
+		8471ED081CDA25C8008527BB /* MYVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYVideoView.xib; sourceTree = "<group>"; };
+		8471ED0A1CDA4C21008527BB /* MYCommentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCommentItem.h; sourceTree = "<group>"; };
+		8471ED0B1CDA4C21008527BB /* MYCommentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCommentItem.m; sourceTree = "<group>"; };
+		8471ED0D1CDA4CA5008527BB /* MYUserItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYUserItem.h; sourceTree = "<group>"; };
+		8471ED0E1CDA4CA5008527BB /* MYUserItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYUserItem.m; sourceTree = "<group>"; };
+		8471ED101CDA4F04008527BB /* MYHotCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYHotCommentView.h; sourceTree = "<group>"; };
+		8471ED111CDA4F04008527BB /* MYHotCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYHotCommentView.m; sourceTree = "<group>"; };
+		8471ED131CDA4F18008527BB /* MYHotCommentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYHotCommentView.xib; sourceTree = "<group>"; };
 		8478C0011CCE33E500358CE1 /* MYCoinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCoinViewController.h; sourceTree = "<group>"; };
 		8478C0021CCE33E500358CE1 /* MYCoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCoinViewController.m; sourceTree = "<group>"; };
 		848197C01CD5E4F100780E64 /* MYFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFileManager.h; sourceTree = "<group>"; };
@@ -155,6 +192,11 @@
 		84A436531CD479FA00B6A696 /* MYNetTurnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNetTurnViewController.h; sourceTree = "<group>"; };
 		84A436541CD479FA00B6A696 /* MYNetTurnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNetTurnViewController.m; sourceTree = "<group>"; };
 		84A436551CD479FA00B6A696 /* MYNetTurnViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYNetTurnViewController.xib; sourceTree = "<group>"; };
+		84A79CE91CDB637B008307CB /* MYBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBottomView.h; sourceTree = "<group>"; };
+		84A79CEA1CDB637B008307CB /* MYBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBottomView.m; sourceTree = "<group>"; };
+		84A79CEC1CDB6392008307CB /* MYBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYBottomView.xib; sourceTree = "<group>"; };
+		84A79CEE1CDB81F5008307CB /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		84A79CEF1CDB81F5008307CB /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		84AE33081CD342990055F879 /* MYPersenalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPersenalCell.h; sourceTree = "<group>"; };
 		84AE33091CD342990055F879 /* MYPersenalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPersenalCell.m; sourceTree = "<group>"; };
 		84AE330A1CD342990055F879 /* MYPersenalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYPersenalCell.xib; sourceTree = "<group>"; };
@@ -164,6 +206,18 @@
 		84B229F91CCD08D40078456B /* MYSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSettingViewController.m; sourceTree = "<group>"; };
 		84B229FE1CCD0A660078456B /* MYSugessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSugessionViewController.h; sourceTree = "<group>"; };
 		84B229FF1CCD0A660078456B /* MYSugessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSugessionViewController.m; sourceTree = "<group>"; };
+		84B55C231CD769E300C71AD2 /* MYThemeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYThemeCell.h; sourceTree = "<group>"; };
+		84B55C241CD769E300C71AD2 /* MYThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYThemeCell.m; sourceTree = "<group>"; };
+		84B55C261CD76C5D00C71AD2 /* MYThemeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYThemeItem.h; sourceTree = "<group>"; };
+		84B55C271CD76C5E00C71AD2 /* MYThemeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYThemeItem.m; sourceTree = "<group>"; };
+		84B55C2E1CD776DA00C71AD2 /* MYTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTopView.h; sourceTree = "<group>"; };
+		84B55C2F1CD776DA00C71AD2 /* MYTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTopView.m; sourceTree = "<group>"; };
+		84B55C311CD776EB00C71AD2 /* MYTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYTopView.xib; sourceTree = "<group>"; };
+		84B55C341CD7811600C71AD2 /* MYThemeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYThemeViewModel.h; sourceTree = "<group>"; };
+		84B55C351CD7811600C71AD2 /* MYThemeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYThemeViewModel.m; sourceTree = "<group>"; };
+		84B55C371CD7981000C71AD2 /* MYPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPictureView.h; sourceTree = "<group>"; };
+		84B55C381CD7981000C71AD2 /* MYPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPictureView.m; sourceTree = "<group>"; };
+		84B55C3A1CD7982600C71AD2 /* MYPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYPictureView.xib; sourceTree = "<group>"; };
 		84BA51091CD2EF1A002BA5BF /* MYTextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTextFiled.h; sourceTree = "<group>"; };
 		84BA510A1CD2EF1A002BA5BF /* MYTextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTextFiled.m; sourceTree = "<group>"; };
 		84BA510C1CD300EE002BA5BF /* UITextField+PlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PlaceHolder.h"; sourceTree = "<group>"; };
@@ -193,6 +247,15 @@
 				837E96ECB7006BC3AD62BC3A /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8412501E1CD83CAE00855358 /* LoadImageTool */ = {
+			isa = PBXGroup;
+			children = (
+				8412501F1CD83D2100855358 /* MYLoadImageManager.h */,
+				841250201CD83D2100855358 /* MYLoadImageManager.m */,
+			);
+			path = LoadImageTool;
 			sourceTree = "<group>";
 		};
 		841796211CD0CD3C0053E6FA /* 启动图片 */ = {
@@ -343,6 +406,7 @@
 		8482D4EB1CCBB76300070FAE /* essence(精华) */ = {
 			isa = PBXGroup;
 			children = (
+				84B55C331CD780ED00C71AD2 /* ViewModel */,
 				8482D4EC1CCBB76300070FAE /* Controller */,
 				8482D4ED1CCBB76300070FAE /* Model */,
 				8482D4EE1CCBB76300070FAE /* View */,
@@ -369,6 +433,12 @@
 			children = (
 				84945AFF1CD1028800E5A7B3 /* MYTagItem.h */,
 				84945B001CD1028800E5A7B3 /* MYTagItem.m */,
+				84B55C261CD76C5D00C71AD2 /* MYThemeItem.h */,
+				84B55C271CD76C5E00C71AD2 /* MYThemeItem.m */,
+				8471ED0A1CDA4C21008527BB /* MYCommentItem.h */,
+				8471ED0B1CDA4C21008527BB /* MYCommentItem.m */,
+				8471ED0D1CDA4CA5008527BB /* MYUserItem.h */,
+				8471ED0E1CDA4CA5008527BB /* MYUserItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -376,6 +446,7 @@
 		8482D4EE1CCBB76300070FAE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84B55C221CD769B900C71AD2 /* ThemeCell */,
 				84945B021CD1047E00E5A7B3 /* MYTagCell.h */,
 				84945B031CD1047E00E5A7B3 /* MYTagCell.m */,
 				84945B041CD1047E00E5A7B3 /* MYTagCell.xib */,
@@ -595,6 +666,8 @@
 		8482D5041CCBB76300070FAE /* Catagory */ = {
 			isa = PBXGroup;
 			children = (
+				84A79CEE1CDB81F5008307CB /* UIImage+Image.h */,
+				84A79CEF1CDB81F5008307CB /* UIImage+Image.m */,
 				8482D51B1CCBC75600070FAE /* UIView+MYExtension.h */,
 				8482D51C1CCBC75600070FAE /* UIView+MYExtension.m */,
 				84E02FEF1CCCDDBB00B0BF9E /* UIBarButtonItem+Item.h */,
@@ -648,9 +721,48 @@
 		8482D50A1CCBB76300070FAE /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				8412501E1CD83CAE00855358 /* LoadImageTool */,
 				848197BF1CD5E4D400780E64 /* FileTool */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		84B55C221CD769B900C71AD2 /* ThemeCell */ = {
+			isa = PBXGroup;
+			children = (
+				84B55C231CD769E300C71AD2 /* MYThemeCell.h */,
+				84B55C241CD769E300C71AD2 /* MYThemeCell.m */,
+				8471ECFD1CDA17A9008527BB /* MYBaseView.h */,
+				8471ECFE1CDA17A9008527BB /* MYBaseView.m */,
+				84B55C2E1CD776DA00C71AD2 /* MYTopView.h */,
+				84B55C2F1CD776DA00C71AD2 /* MYTopView.m */,
+				84B55C311CD776EB00C71AD2 /* MYTopView.xib */,
+				84B55C371CD7981000C71AD2 /* MYPictureView.h */,
+				84B55C381CD7981000C71AD2 /* MYPictureView.m */,
+				84B55C3A1CD7982600C71AD2 /* MYPictureView.xib */,
+				8471ED001CDA1860008527BB /* MYVoiceView.h */,
+				8471ED011CDA1860008527BB /* MYVoiceView.m */,
+				8471ED031CDA186F008527BB /* MYVoiceView.xib */,
+				8471ED051CDA25AE008527BB /* MYVideoView.h */,
+				8471ED061CDA25AE008527BB /* MYVideoView.m */,
+				8471ED081CDA25C8008527BB /* MYVideoView.xib */,
+				8471ED101CDA4F04008527BB /* MYHotCommentView.h */,
+				8471ED111CDA4F04008527BB /* MYHotCommentView.m */,
+				8471ED131CDA4F18008527BB /* MYHotCommentView.xib */,
+				84A79CE91CDB637B008307CB /* MYBottomView.h */,
+				84A79CEA1CDB637B008307CB /* MYBottomView.m */,
+				84A79CEC1CDB6392008307CB /* MYBottomView.xib */,
+			);
+			path = ThemeCell;
+			sourceTree = "<group>";
+		};
+		84B55C331CD780ED00C71AD2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84B55C341CD7811600C71AD2 /* MYThemeViewModel.h */,
+				84B55C351CD7811600C71AD2 /* MYThemeViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C6FAEEAC6CA8EC41E089FB19 /* Frameworks */ = {
@@ -725,14 +837,20 @@
 				84945B061CD1047E00E5A7B3 /* MYTagCell.xib in Resources */,
 				8417962E1CD0CD3C0053E6FA /* LaunchImage.png in Resources */,
 				8417962F1CD0CD3C0053E6FA /* LaunchImage@2x.png in Resources */,
+				84B55C3B1CD7982600C71AD2 /* MYPictureView.xib in Resources */,
 				84A436571CD479FA00B6A696 /* MYNetTurnViewController.xib in Resources */,
+				8471ED141CDA4F18008527BB /* MYHotCommentView.xib in Resources */,
 				84200AA11CD232260010E8FA /* MYFoucsViewController.xib in Resources */,
+				84A79CED1CDB6392008307CB /* MYBottomView.xib in Resources */,
 				84200AAB1CD248A10010E8FA /* MYLoginRegistView.xib in Resources */,
 				8482D4DA1CCB55A500070FAE /* LaunchScreen.storyboard in Resources */,
 				841796381CD0CDBE0053E6FA /* MYADViewController.xib in Resources */,
+				8471ED041CDA186F008527BB /* MYVoiceView.xib in Resources */,
 				84200AB01CD267E90010E8FA /* MYFastLoginView.xib in Resources */,
 				84AE330C1CD342990055F879 /* MYPersenalCell.xib in Resources */,
+				8471ED091CDA25C8008527BB /* MYVideoView.xib in Resources */,
 				8417962C1CD0CD3C0053E6FA /* LaunchImage-800-667h@2x.png in Resources */,
+				84B55C321CD776EB00C71AD2 /* MYTopView.xib in Resources */,
 				841796291CD0CD3C0053E6FA /* LaunchImage-568h@2x.png in Resources */,
 				8417962B1CD0CD3C0053E6FA /* LaunchImage-700@2x.png in Resources */,
 				84BA51101CD338A0002BA5BF /* MYPersonalViewController.storyboard in Resources */,
@@ -799,14 +917,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				848197E11CD6345400780E64 /* MYVideoViewController.h in Sources */,
+				8471ED021CDA1860008527BB /* MYVoiceView.m in Sources */,
+				84B55C391CD7981000C71AD2 /* MYPictureView.m in Sources */,
 				848197E01CD633E200780E64 /* MYBaseMenusViewController.h in Sources */,
 				848CFF131CCBE014002A8DF9 /* PrefixHeader.pch in Sources */,
 				84BA510E1CD300EE002BA5BF /* UITextField+PlaceHolder.m in Sources */,
 				848197CF1CD61A5D00780E64 /* MYPictureTableViewController.m in Sources */,
 				848197C91CD61A2700780E64 /* MYVideoViewController.m in Sources */,
 				848197EB1CD634EF00780E64 /* MYNewPictureViewController.m in Sources */,
+				8471ECFF1CDA17A9008527BB /* MYBaseView.m in Sources */,
 				848197C21CD5E4F100780E64 /* MYFileManager.m in Sources */,
+				84B55C281CD76C5E00C71AD2 /* MYThemeItem.m in Sources */,
 				84BA510B1CD2EF1A002BA5BF /* MYTextFiled.m in Sources */,
+				8471ED0F1CDA4CA5008527BB /* MYUserItem.m in Sources */,
+				84B55C301CD776DA00C71AD2 /* MYTopView.m in Sources */,
 				84A436561CD479FA00B6A696 /* MYNetTurnViewController.m in Sources */,
 				84AE330B1CD342990055F879 /* MYPersenalCell.m in Sources */,
 				8482D51D1CCBC75600070FAE /* UIView+MYExtension.m in Sources */,
@@ -814,8 +938,11 @@
 				84945B051CD1047E00E5A7B3 /* MYTagCell.m in Sources */,
 				848197D51CD62D7B00780E64 /* MYBaseMenusViewController.m in Sources */,
 				84200AA51CD23DB60010E8FA /* MYLoginRegistViewController.m in Sources */,
+				841250211CD83D2100855358 /* MYLoadImageManager.m in Sources */,
 				84945B011CD1028800E5A7B3 /* MYTagItem.m in Sources */,
 				8482D5161CCBBD4300070FAE /* MYNewViewController.m in Sources */,
+				84A79CF01CDB81F5008307CB /* UIImage+Image.m in Sources */,
+				84B55C251CD769E300C71AD2 /* MYThemeCell.m in Sources */,
 				8482D5191CCBBF2B00070FAE /* MYNavViewController.m in Sources */,
 				84945AFE1CD0F58F00E5A7B3 /* MYTagSubViewController.m in Sources */,
 				848197C61CD61A1500780E64 /* MYAllViewController.m in Sources */,
@@ -823,16 +950,21 @@
 				8482D4E91CCBAA7600070FAE /* MYTabBar.m in Sources */,
 				84945AFB1CD0DD5300E5A7B3 /* MYADItem.m in Sources */,
 				84200AAE1CD267D30010E8FA /* MYFastLoginView.m in Sources */,
+				8471ED071CDA25AE008527BB /* MYVideoView.m in Sources */,
 				84200AA91CD248900010E8FA /* MYLoginRegistView.m in Sources */,
+				8471ED0C1CDA4C21008527BB /* MYCommentItem.m in Sources */,
 				848197CC1CD61A4E00780E64 /* MYVoiceViewController.m in Sources */,
 				848197E81CD634D900780E64 /* MYNewVideoViewController.m in Sources */,
 				8482D4E61CCBA42800070FAE /* MYPresentViewController.m in Sources */,
+				84B55C361CD7811600C71AD2 /* MYThemeViewModel.m in Sources */,
 				84B229FA1CCD08D40078456B /* MYSettingViewController.m in Sources */,
 				841796371CD0CDBE0053E6FA /* MYADViewController.m in Sources */,
 				84E02FF11CCCDDBB00B0BF9E /* UIBarButtonItem+Item.m in Sources */,
 				84693F861CD2744900A0B546 /* MYLoginRegistButton.m in Sources */,
+				84A79CEB1CDB637B008307CB /* MYBottomView.m in Sources */,
 				8482D50D1CCBBCD600070FAE /* MYEssenceViewController.m in Sources */,
 				84AE330F1CD344260055F879 /* MYExcelItem.m in Sources */,
+				8471ED121CDA4F04008527BB /* MYHotCommentView.m in Sources */,
 				84B22A001CCD0A660078456B /* MYSugessionViewController.m in Sources */,
 				848197D21CD61A7800780E64 /* MYTextViewController.m in Sources */,
 				848197E51CD634C600780E64 /* MYNewAllViewController.m in Sources */,

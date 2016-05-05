@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MYBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="83"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYx-DA-0eb" userLabel="ding">
+                    <rect key="frame" x="10" y="30" width="74" height="22"/>
+                    <state key="normal" title="Button" image="mainCellDing"/>
+                    <state key="highlighted" image="mainCellDingClick"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8x-bE-EmD" userLabel="cai">
+                    <rect key="frame" x="104" y="30" width="74" height="22"/>
+                    <state key="normal" title="Button" image="mainCellCai"/>
+                    <state key="highlighted" image="mainCellCaiClick"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8u-Dd-sJq" userLabel="share">
+                    <rect key="frame" x="198" y="30" width="74" height="22"/>
+                    <state key="normal" title="Button" image="mainCellShare"/>
+                    <state key="highlighted" image="mainCellShareClick"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfB-oH-Cls">
+                    <rect key="frame" x="291" y="30" width="74" height="22"/>
+                    <state key="normal" title="Button" image="mainCellComment"/>
+                    <state key="highlighted" image="mainCellCommentClick"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="5yR-l0-rl7" userLabel="comment">
+                    <rect key="frame" x="94" y="0.0" width="3" height="83"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="3" id="CEj-6o-Qhc"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="c5W-SA-rZP">
+                    <rect key="frame" x="188" y="0.0" width="3" height="83"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="3" id="dGq-M4-SjV"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="I0u-ms-1wN">
+                    <rect key="frame" x="281" y="0.0" width="3" height="83"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="3" id="C3h-4J-hXr"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-content-line" translatesAutoresizingMaskIntoConstraints="NO" id="yYX-bE-flk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="cRT-Fz-GGP"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TfB-oH-Cls" firstAttribute="width" secondItem="s8u-Dd-sJq" secondAttribute="width" id="2dX-tk-k5y"/>
+                <constraint firstItem="s8u-Dd-sJq" firstAttribute="leading" secondItem="e8x-bE-EmD" secondAttribute="trailing" id="3lG-Tw-6km"/>
+                <constraint firstItem="yYX-bE-flk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6Bx-ZC-7BB"/>
+                <constraint firstItem="TfB-oH-Cls" firstAttribute="leading" secondItem="s8u-Dd-sJq" secondAttribute="trailing" id="8bz-zU-eBG"/>
+                <constraint firstAttribute="bottom" secondItem="c5W-SA-rZP" secondAttribute="bottom" id="8dV-4y-sDf"/>
+                <constraint firstItem="c5W-SA-rZP" firstAttribute="leading" secondItem="e8x-bE-EmD" secondAttribute="trailing" id="9Lk-ji-Yob"/>
+                <constraint firstItem="s8u-Dd-sJq" firstAttribute="width" secondItem="e8x-bE-EmD" secondAttribute="width" id="BAY-gl-PfU"/>
+                <constraint firstAttribute="bottom" secondItem="aYx-DA-0eb" secondAttribute="bottom" id="C51-KV-ynh"/>
+                <constraint firstAttribute="bottom" secondItem="I0u-ms-1wN" secondAttribute="bottom" id="Dw4-qT-bRV"/>
+                <constraint firstItem="aYx-DA-0eb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ECf-DE-Qiv"/>
+                <constraint firstItem="5yR-l0-rl7" firstAttribute="leading" secondItem="aYx-DA-0eb" secondAttribute="trailing" id="FJd-Of-yko"/>
+                <constraint firstItem="TfB-oH-Cls" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FgD-eB-4bG"/>
+                <constraint firstItem="c5W-SA-rZP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Fsx-86-W9L"/>
+                <constraint firstItem="aYx-DA-0eb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Jnc-vc-TKX"/>
+                <constraint firstItem="e8x-bE-EmD" firstAttribute="leading" secondItem="aYx-DA-0eb" secondAttribute="trailing" id="MmR-6n-qMp"/>
+                <constraint firstItem="e8x-bE-EmD" firstAttribute="width" secondItem="aYx-DA-0eb" secondAttribute="width" id="Oah-Ly-y2e"/>
+                <constraint firstItem="I0u-ms-1wN" firstAttribute="leading" secondItem="s8u-Dd-sJq" secondAttribute="trailing" id="RcY-cz-VZS"/>
+                <constraint firstItem="yYX-bE-flk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Rjm-me-sjc"/>
+                <constraint firstItem="TfB-oH-Cls" firstAttribute="height" secondItem="s8u-Dd-sJq" secondAttribute="height" id="UHT-w7-uPN"/>
+                <constraint firstItem="e8x-bE-EmD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WXh-3M-Zh3"/>
+                <constraint firstItem="I0u-ms-1wN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="X0S-YB-z4B"/>
+                <constraint firstAttribute="bottom" secondItem="5yR-l0-rl7" secondAttribute="bottom" id="b3m-ym-Z2J"/>
+                <constraint firstItem="e8x-bE-EmD" firstAttribute="height" secondItem="aYx-DA-0eb" secondAttribute="height" id="dXl-Vz-lNT"/>
+                <constraint firstAttribute="trailing" secondItem="yYX-bE-flk" secondAttribute="trailing" id="fDN-7w-YAt"/>
+                <constraint firstItem="s8u-Dd-sJq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gNK-IG-6H2"/>
+                <constraint firstItem="s8u-Dd-sJq" firstAttribute="height" secondItem="e8x-bE-EmD" secondAttribute="height" id="lsX-FC-G6a"/>
+                <constraint firstAttribute="trailing" secondItem="TfB-oH-Cls" secondAttribute="trailing" id="pRw-BW-DxE"/>
+                <constraint firstItem="5yR-l0-rl7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qIB-XU-w9L"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="caiButton" destination="e8x-bE-EmD" id="k1E-YZ-lVw"/>
+                <outlet property="commentButton" destination="TfB-oH-Cls" id="mjl-DC-xpv"/>
+                <outlet property="reportButton" destination="s8u-Dd-sJq" id="ScI-Tv-psi"/>
+                <outlet property="zanButton" destination="aYx-DA-0eb" id="ZBY-1e-g2g"/>
+            </connections>
+            <point key="canvasLocation" x="313.5" y="172.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cell-button-line" width="1" height="29"/>
+        <image name="cell-content-line" width="299" height="1"/>
+        <image name="mainCellCai" width="20" height="20"/>
+        <image name="mainCellCaiClick" width="20" height="20"/>
+        <image name="mainCellComment" width="20" height="20"/>
+        <image name="mainCellCommentClick" width="20" height="20"/>
+        <image name="mainCellDing" width="20" height="20"/>
+        <image name="mainCellDingClick" width="20" height="20"/>
+        <image name="mainCellShare" width="20" height="20"/>
+        <image name="mainCellShareClick" width="23" height="23"/>
+    </resources>
+</document>
