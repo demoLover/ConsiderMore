@@ -70,9 +70,52 @@
     
     [self.iconView sd_setImageWithURL:[NSURL URLWithString:item.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
     self.nameLabel.text = item.name;
-    self.timeLabel.text = item.create_time;
+    self.timeLabel.text = [self timeString];
     self.textLabel.text = item.text;
     
 }
 /*************** setItem ***************/
+
+
+
+/*************** 日期字符串的处理 ***************/
+- (NSString *)timeString
+{
+    //日期字符串
+//    NSString *timeStr = self.item.create_time;
+    NSString *timeStr = @"2016-04-06 19:11:00";
+    
+    //日期格式
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    
+    //日期
+    NSDate *creatDate = [formatter dateFromString:timeStr];
+    
+    //获取日期差
+    NSDateComponents *detalCmp = [creatDate detalDateToNow];
+    
+    if ([creatDate isThisYear]) {//今年
+
+        if ([creatDate isToday]) {//今天
+            
+            if (detalCmp.hour >= 1) {
+                timeStr = [NSString stringWithFormat:@"%ld小时之前",detalCmp.hour];
+            } else if (detalCmp.minute > 1) {
+                timeStr = [NSString stringWithFormat:@"%ld分钟前",detalCmp.minute];
+            } else {//小于一分钟
+                timeStr = @"刚刚";
+            }
+        } else if ([creatDate isYesterday]) {//昨天
+            formatter.dateFormat = @"昨天 HH:mm:ss";
+            timeStr = [formatter stringFromDate:creatDate];
+        } else {//昨天之前
+            formatter.dateFormat = @"MM-dd HH:mm:ss";
+            timeStr = [formatter stringFromDate:creatDate];
+        }
+    }
+    return timeStr;
+    
+}
+/*************** 日期字符串的处理 ***************/
 @end

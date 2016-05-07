@@ -66,6 +66,7 @@
 		84945B011CD1028800E5A7B3 /* MYTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84945B001CD1028800E5A7B3 /* MYTagItem.m */; };
 		84945B051CD1047E00E5A7B3 /* MYTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84945B031CD1047E00E5A7B3 /* MYTagCell.m */; };
 		84945B061CD1047E00E5A7B3 /* MYTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84945B041CD1047E00E5A7B3 /* MYTagCell.xib */; };
+		84A1795D1CDE11FD00EC24A4 /* NSDate+date.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A1795C1CDE11FD00EC24A4 /* NSDate+date.m */; };
 		84A436561CD479FA00B6A696 /* MYNetTurnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A436541CD479FA00B6A696 /* MYNetTurnViewController.m */; };
 		84A436571CD479FA00B6A696 /* MYNetTurnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A436551CD479FA00B6A696 /* MYNetTurnViewController.xib */; };
 		84A79CEB1CDB637B008307CB /* MYBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A79CEA1CDB637B008307CB /* MYBottomView.m */; };
@@ -189,6 +190,8 @@
 		84945B021CD1047E00E5A7B3 /* MYTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTagCell.h; sourceTree = "<group>"; };
 		84945B031CD1047E00E5A7B3 /* MYTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTagCell.m; sourceTree = "<group>"; };
 		84945B041CD1047E00E5A7B3 /* MYTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYTagCell.xib; sourceTree = "<group>"; };
+		84A1795B1CDE11FD00EC24A4 /* NSDate+date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+date.h"; sourceTree = "<group>"; };
+		84A1795C1CDE11FD00EC24A4 /* NSDate+date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+date.m"; sourceTree = "<group>"; };
 		84A436531CD479FA00B6A696 /* MYNetTurnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNetTurnViewController.h; sourceTree = "<group>"; };
 		84A436541CD479FA00B6A696 /* MYNetTurnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNetTurnViewController.m; sourceTree = "<group>"; };
 		84A436551CD479FA00B6A696 /* MYNetTurnViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYNetTurnViewController.xib; sourceTree = "<group>"; };
@@ -674,6 +677,8 @@
 				84E02FF01CCCDDBB00B0BF9E /* UIBarButtonItem+Item.m */,
 				84BA510C1CD300EE002BA5BF /* UITextField+PlaceHolder.h */,
 				84BA510D1CD300EE002BA5BF /* UITextField+PlaceHolder.m */,
+				84A1795B1CDE11FD00EC24A4 /* NSDate+date.h */,
+				84A1795C1CDE11FD00EC24A4 /* NSDate+date.m */,
 			);
 			path = Catagory;
 			sourceTree = "<group>";
@@ -942,6 +947,7 @@
 				84945B011CD1028800E5A7B3 /* MYTagItem.m in Sources */,
 				8482D5161CCBBD4300070FAE /* MYNewViewController.m in Sources */,
 				84A79CF01CDB81F5008307CB /* UIImage+Image.m in Sources */,
+				84A1795D1CDE11FD00EC24A4 /* NSDate+date.m in Sources */,
 				84B55C251CD769E300C71AD2 /* MYThemeCell.m in Sources */,
 				8482D5191CCBBF2B00070FAE /* MYNavViewController.m in Sources */,
 				84945AFE1CD0F58F00E5A7B3 /* MYTagSubViewController.m in Sources */,

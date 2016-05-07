@@ -17,6 +17,8 @@
 #import "UIBarButtonItem+Item.h"
 #import "UITextField+PlaceHolder.h"
 #import "UIImage+Image.h"
+#import "NSDate+date.h"
+
 /*************** 屏幕适配 ***************/
 #define MYScreenW [UIScreen mainScreen].bounds.size.width
 #define MYScreenH [UIScreen mainScreen].bounds.size.height
