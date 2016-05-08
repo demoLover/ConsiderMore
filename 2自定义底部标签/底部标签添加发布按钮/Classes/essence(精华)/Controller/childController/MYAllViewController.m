@@ -58,7 +58,7 @@ static NSString * const ID = @"theme";
     NSMutableDictionary *pramaters = [NSMutableDictionary dictionary];
     pramaters[@"a"] = @"list";
     pramaters[@"c"] = @"data";
-    pramaters[@"type"] = @"10";
+    pramaters[@"type"] = @"1";
 
     //发送请求并解析数据
     [manager GET:MYBaseUrl parameters:pramaters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {

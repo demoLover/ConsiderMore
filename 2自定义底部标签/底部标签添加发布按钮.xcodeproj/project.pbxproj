@@ -24,6 +24,9 @@
 		84200AAB1CD248A10010E8FA /* MYLoginRegistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84200AAA1CD248A10010E8FA /* MYLoginRegistView.xib */; };
 		84200AAE1CD267D30010E8FA /* MYFastLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84200AAD1CD267D30010E8FA /* MYFastLoginView.m */; };
 		84200AB01CD267E90010E8FA /* MYFastLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84200AAF1CD267E90010E8FA /* MYFastLoginView.xib */; };
+		846144E91CDF5790001324FD /* MYSeeBigPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846144E71CDF5790001324FD /* MYSeeBigPictureViewController.m */; };
+		846144EA1CDF5790001324FD /* MYSeeBigPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846144E81CDF5790001324FD /* MYSeeBigPictureViewController.xib */; };
+		846144EE1CDF755B001324FD /* MYPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 846144ED1CDF755B001324FD /* MYPhotoManager.m */; };
 		84693F861CD2744900A0B546 /* MYLoginRegistButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84693F851CD2744900A0B546 /* MYLoginRegistButton.m */; };
 		8471ECFF1CDA17A9008527BB /* MYBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8471ECFE1CDA17A9008527BB /* MYBaseView.m */; };
 		8471ED021CDA1860008527BB /* MYVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8471ED011CDA1860008527BB /* MYVoiceView.m */; };
@@ -116,6 +119,11 @@
 		84200AAC1CD267D30010E8FA /* MYFastLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFastLoginView.h; sourceTree = "<group>"; };
 		84200AAD1CD267D30010E8FA /* MYFastLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFastLoginView.m; sourceTree = "<group>"; };
 		84200AAF1CD267E90010E8FA /* MYFastLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYFastLoginView.xib; sourceTree = "<group>"; };
+		846144E61CDF5790001324FD /* MYSeeBigPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSeeBigPictureViewController.h; sourceTree = "<group>"; };
+		846144E71CDF5790001324FD /* MYSeeBigPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSeeBigPictureViewController.m; sourceTree = "<group>"; };
+		846144E81CDF5790001324FD /* MYSeeBigPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYSeeBigPictureViewController.xib; sourceTree = "<group>"; };
+		846144EC1CDF755B001324FD /* MYPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPhotoManager.h; sourceTree = "<group>"; };
+		846144ED1CDF755B001324FD /* MYPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPhotoManager.m; sourceTree = "<group>"; };
 		84693F841CD2744900A0B546 /* MYLoginRegistButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLoginRegistButton.h; sourceTree = "<group>"; };
 		84693F851CD2744900A0B546 /* MYLoginRegistButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLoginRegistButton.m; sourceTree = "<group>"; };
 		8471ECFD1CDA17A9008527BB /* MYBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBaseView.h; sourceTree = "<group>"; };
@@ -311,6 +319,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		846144EB1CDF7530001324FD /* PhotoTool */ = {
+			isa = PBXGroup;
+			children = (
+				846144EC1CDF755B001324FD /* MYPhotoManager.h */,
+				846144ED1CDF755B001324FD /* MYPhotoManager.m */,
+			);
+			path = PhotoTool;
+			sourceTree = "<group>";
+		};
 		848197BF1CD5E4D400780E64 /* FileTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +444,9 @@
 				84945AFD1CD0F58F00E5A7B3 /* MYTagSubViewController.m */,
 				848197D31CD62D7B00780E64 /* MYBaseMenusViewController.h */,
 				848197D41CD62D7B00780E64 /* MYBaseMenusViewController.m */,
+				846144E61CDF5790001324FD /* MYSeeBigPictureViewController.h */,
+				846144E71CDF5790001324FD /* MYSeeBigPictureViewController.m */,
+				846144E81CDF5790001324FD /* MYSeeBigPictureViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -726,6 +746,7 @@
 		8482D50A1CCBB76300070FAE /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				846144EB1CDF7530001324FD /* PhotoTool */,
 				8412501E1CD83CAE00855358 /* LoadImageTool */,
 				848197BF1CD5E4D400780E64 /* FileTool */,
 			);
@@ -856,6 +877,7 @@
 				8471ED091CDA25C8008527BB /* MYVideoView.xib in Resources */,
 				8417962C1CD0CD3C0053E6FA /* LaunchImage-800-667h@2x.png in Resources */,
 				84B55C321CD776EB00C71AD2 /* MYTopView.xib in Resources */,
+				846144EA1CDF5790001324FD /* MYSeeBigPictureViewController.xib in Resources */,
 				841796291CD0CD3C0053E6FA /* LaunchImage-568h@2x.png in Resources */,
 				8417962B1CD0CD3C0053E6FA /* LaunchImage-700@2x.png in Resources */,
 				84BA51101CD338A0002BA5BF /* MYPersonalViewController.storyboard in Resources */,
@@ -941,10 +963,12 @@
 				8482D51D1CCBC75600070FAE /* UIView+MYExtension.m in Sources */,
 				8482D4E31CCB577C00070FAE /* MYViewController.m in Sources */,
 				84945B051CD1047E00E5A7B3 /* MYTagCell.m in Sources */,
+				846144EE1CDF755B001324FD /* MYPhotoManager.m in Sources */,
 				848197D51CD62D7B00780E64 /* MYBaseMenusViewController.m in Sources */,
 				84200AA51CD23DB60010E8FA /* MYLoginRegistViewController.m in Sources */,
 				841250211CD83D2100855358 /* MYLoadImageManager.m in Sources */,
 				84945B011CD1028800E5A7B3 /* MYTagItem.m in Sources */,
+				846144E91CDF5790001324FD /* MYSeeBigPictureViewController.m in Sources */,
 				8482D5161CCBBD4300070FAE /* MYNewViewController.m in Sources */,
 				84A79CF01CDB81F5008307CB /* UIImage+Image.m in Sources */,
 				84A1795D1CDE11FD00EC24A4 /* NSDate+date.m in Sources */,

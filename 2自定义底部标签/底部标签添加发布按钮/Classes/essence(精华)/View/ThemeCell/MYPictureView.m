@@ -11,6 +11,7 @@
 #import "MYThemeItem.h"
 #import "MYLoadImageManager.h"
 #import <DALabeledCircularProgressView.h>
+#import "MYSeeBigPictureViewController.h"
 
 @interface MYPictureView ()
 @property (weak, nonatomic) IBOutlet UIImageView *pictureView;
@@ -124,5 +125,18 @@
         self.pictureView.contentMode = UIViewContentModeScaleToFill;
         self.pictureView.clipsToBounds = NO;
     }
+}
+
+
+
+
+#pragma mark 点击看大图业务处理
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    //创建控制器
+    MYSeeBigPictureViewController *seeVC = [[MYSeeBigPictureViewController alloc] init];
+    seeVC.item = self.item;
+    
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:seeVC animated:YES completion:nil];
 }
 @end
