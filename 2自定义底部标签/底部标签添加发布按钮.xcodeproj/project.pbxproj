@@ -17,6 +17,7 @@
 		8417962F1CD0CD3C0053E6FA /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 841796281CD0CD3C0053E6FA /* LaunchImage@2x.png */; };
 		841796371CD0CDBE0053E6FA /* MYADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841796351CD0CDBE0053E6FA /* MYADViewController.m */; };
 		841796381CD0CDBE0053E6FA /* MYADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841796361CD0CDBE0053E6FA /* MYADViewController.xib */; };
+		841C3A361CE06227009B725E /* MYBaseThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841C3A351CE06227009B725E /* MYBaseThemeViewController.m */; };
 		84200AA11CD232260010E8FA /* MYFoucsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84200AA01CD232260010E8FA /* MYFoucsViewController.xib */; };
 		84200AA51CD23DB60010E8FA /* MYLoginRegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84200AA31CD23DB60010E8FA /* MYLoginRegistViewController.m */; };
 		84200AA61CD23DB60010E8FA /* MYLoginRegistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84200AA41CD23DB60010E8FA /* MYLoginRegistViewController.xib */; };
@@ -109,6 +110,8 @@
 		841796341CD0CDBE0053E6FA /* MYADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYADViewController.h; sourceTree = "<group>"; };
 		841796351CD0CDBE0053E6FA /* MYADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYADViewController.m; sourceTree = "<group>"; };
 		841796361CD0CDBE0053E6FA /* MYADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYADViewController.xib; sourceTree = "<group>"; };
+		841C3A341CE06227009B725E /* MYBaseThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBaseThemeViewController.h; sourceTree = "<group>"; };
+		841C3A351CE06227009B725E /* MYBaseThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBaseThemeViewController.m; sourceTree = "<group>"; };
 		84200AA01CD232260010E8FA /* MYFoucsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYFoucsViewController.xib; sourceTree = "<group>"; };
 		84200AA21CD23DB60010E8FA /* MYLoginRegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLoginRegistViewController.h; sourceTree = "<group>"; };
 		84200AA31CD23DB60010E8FA /* MYLoginRegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLoginRegistViewController.m; sourceTree = "<group>"; };
@@ -350,6 +353,8 @@
 				848197CE1CD61A5D00780E64 /* MYPictureTableViewController.m */,
 				848197D01CD61A7800780E64 /* MYTextViewController.h */,
 				848197D11CD61A7800780E64 /* MYTextViewController.m */,
+				841C3A341CE06227009B725E /* MYBaseThemeViewController.h */,
+				841C3A351CE06227009B725E /* MYBaseThemeViewController.m */,
 			);
 			path = childController;
 			sourceTree = "<group>";
@@ -980,6 +985,7 @@
 				8482D4E91CCBAA7600070FAE /* MYTabBar.m in Sources */,
 				84945AFB1CD0DD5300E5A7B3 /* MYADItem.m in Sources */,
 				84200AAE1CD267D30010E8FA /* MYFastLoginView.m in Sources */,
+				841C3A361CE06227009B725E /* MYBaseThemeViewController.m in Sources */,
 				8471ED071CDA25AE008527BB /* MYVideoView.m in Sources */,
 				84200AA91CD248900010E8FA /* MYLoginRegistView.m in Sources */,
 				8471ED0C1CDA4C21008527BB /* MYCommentItem.m in Sources */,

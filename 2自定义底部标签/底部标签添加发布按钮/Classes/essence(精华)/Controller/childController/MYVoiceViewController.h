@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface MYVoiceViewController : UITableViewController
+#import "MYBaseThemeViewController.h"
+@interface MYVoiceViewController : MYBaseThemeViewController
 
 @end

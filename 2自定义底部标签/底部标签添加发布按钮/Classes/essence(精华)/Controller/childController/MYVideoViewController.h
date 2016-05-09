@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MYBaseThemeViewController.h"
 
-@interface MYVideoViewController : UITableViewController
+@interface MYVideoViewController : MYBaseThemeViewController
 
 @end

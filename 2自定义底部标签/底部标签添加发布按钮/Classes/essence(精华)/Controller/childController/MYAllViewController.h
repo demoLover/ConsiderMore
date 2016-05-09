@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MYBaseThemeViewController.h"
 
-@interface MYAllViewController : UITableViewController
+@interface MYAllViewController : MYBaseThemeViewController
 
 @end
