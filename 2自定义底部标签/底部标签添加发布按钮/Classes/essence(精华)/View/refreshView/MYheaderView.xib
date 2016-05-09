@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MYheaderView">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="78"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="下拉刷新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieu-tZ-Rwn">
+                    <rect key="frame" x="134" y="29" width="68" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refresh" translatesAutoresizingMaskIntoConstraints="NO" id="zQj-oM-4j5">
+                    <rect key="frame" x="78" y="24" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Gqq-on-4MK"/>
+                        <constraint firstAttribute="height" constant="30" id="e91-rG-ZxW"/>
+                    </constraints>
+                </imageView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0a-4h-FQE">
+                    <rect key="frame" x="0.0" y="0.0" width="336" height="78"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在加载..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhf-x1-QIp">
+                            <rect key="frame" x="127" y="28" width="82" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="MHW-SJ-GLr">
+                            <rect key="frame" x="77" y="29" width="20" height="20"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="nhf-x1-QIp" firstAttribute="centerY" secondItem="t0a-4h-FQE" secondAttribute="centerY" id="Gud-3m-NLr"/>
+                        <constraint firstItem="nhf-x1-QIp" firstAttribute="centerX" secondItem="t0a-4h-FQE" secondAttribute="centerX" id="XIa-g1-46W"/>
+                        <constraint firstItem="nhf-x1-QIp" firstAttribute="leading" secondItem="MHW-SJ-GLr" secondAttribute="trailing" constant="30" id="wN7-vH-eKU"/>
+                        <constraint firstItem="MHW-SJ-GLr" firstAttribute="centerY" secondItem="t0a-4h-FQE" secondAttribute="centerY" id="xqA-u2-zvJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="t0a-4h-FQE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Lth-dm-8ve"/>
+                <constraint firstItem="t0a-4h-FQE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Wsh-hM-uiu"/>
+                <constraint firstItem="ieu-tZ-Rwn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bZX-19-5oj"/>
+                <constraint firstItem="ieu-tZ-Rwn" firstAttribute="leading" secondItem="zQj-oM-4j5" secondAttribute="trailing" constant="30" id="jzq-Pw-TUY"/>
+                <constraint firstItem="ieu-tZ-Rwn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="q3L-H9-xcf"/>
+                <constraint firstAttribute="trailing" secondItem="t0a-4h-FQE" secondAttribute="trailing" id="qre-PJ-CwR"/>
+                <constraint firstItem="zQj-oM-4j5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qvV-MO-q4T"/>
+                <constraint firstAttribute="bottom" secondItem="t0a-4h-FQE" secondAttribute="bottom" id="rak-wg-tCJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="loadingView" destination="t0a-4h-FQE" id="fFv-eh-Ip0"/>
+                <outlet property="refreshIcon" destination="zQj-oM-4j5" id="w0u-eX-CTr"/>
+                <outlet property="refreshLabel" destination="ieu-tZ-Rwn" id="dSL-VV-gfj"/>
+            </connections>
+            <point key="canvasLocation" x="281" y="222"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="refresh" width="28" height="28"/>
+    </resources>
+</document>
