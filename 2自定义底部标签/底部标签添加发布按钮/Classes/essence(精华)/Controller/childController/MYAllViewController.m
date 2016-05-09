@@ -12,8 +12,9 @@
 #import "MYThemeItem.h"
 #import <MJExtension/MJExtension.h>
 #import "MYThemeViewModel.h"
-#import "MYFooterRefreshView.h"
-#import "MYheaderView.h"
+#import <MJRefresh/MJRefresh.h>
+
+
 
 @interface MYAllViewController ()
 //模型数组
@@ -22,11 +23,11 @@
 //视图模型数组
 @property (nonatomic, strong) NSMutableArray *themeVMArrar;
 
-@property (nonatomic, strong) MYFooterRefreshView *footerView;
+
 
 //加载数据参数
 @property (nonatomic, strong) NSNumber *maxtime;
-@property (nonatomic, strong) MYheaderView *headerView;
+
 
 //会话管理者，为了解决冲突
 @property (nonatomic, strong) AFHTTPSessionManager *manager;
@@ -43,6 +44,18 @@ static NSString * const ID = @"theme";
  3、cell的背景图片
  
  */
+
+
+- (AFHTTPSessionManager *)manager
+{
+    if (_manager == nil) {
+        _manager = [AFHTTPSessionManager manager];
+    }
+    return _manager;
+}
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = MYColor(206, 206, 206);
@@ -64,18 +77,19 @@ static NSString * const ID = @"theme";
     [self setupHeaderView];
 }
 
-
+//注意：使用MJRefreshNormalHeader框架一定要手动停止
 /*************** 下拉刷新 ***************/
 
 - (void)setupHeaderView
 {
-    MYheaderView *headerView = [MYheaderView headerView];
-    _headerView = headerView;
-    CGFloat h = 44;
-    //添加到内容上面，y为负值
-    headerView.frame = CGRectMake(0, -h, MYScreenW, h);
+    //创建控件
+    MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
     
-    [self.tableView addSubview:headerView];
+    //设置开始位置透明
+    header.automaticallyChangeAlpha = YES;
+    
+    //添加
+    self.tableView.mj_header = header;
 }
 /*************** 下拉刷新 ***************/
 
@@ -85,15 +99,11 @@ static NSString * const ID = @"theme";
 
 - (void)setupFooterRefreshView
 {
-    MYFooterRefreshView *footerView = [MYFooterRefreshView footerView];
+    MJRefreshAutoNormalFooter *footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
     
-    _footerView = footerView;
+    footer.automaticallyChangeAlpha = YES;
     
-    footerView.frame = CGRectMake(0, 0, MYScreenW, 44);
-    self.tableView.tableFooterView = footerView;
-    
-    //判断是否显示，有数据就显示
-    footerView.hidden = !self.themeVMArrar.count;
+    self.tableView.mj_footer = footer;
 }
 /*************** 创建上啦刷新view ***************/
 
@@ -101,9 +111,8 @@ static NSString * const ID = @"theme";
 - (void)loadNewData
 {
     //取消所有任务
-    [_manager.tasks makeObjectsPerformSelector:@selector(cancel)];
-    //获取会话管理者
-    _manager = [AFHTTPSessionManager manager];
+    [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
+
     //拼接参数
     NSMutableDictionary *pramaters = [NSMutableDictionary dictionary];
     pramaters[@"a"] = @"list";
@@ -111,18 +120,13 @@ static NSString * const ID = @"theme";
     pramaters[@"type"] = @"1";
 
     //发送请求并解析数据
-    [_manager GET:MYBaseUrl parameters:pramaters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.manager GET:MYBaseUrl parameters:pramaters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [responseObject writeToFile:@"/Users/admin/Desktop/123.plist" atomically:YES];
         NSArray *dictArr = responseObject[@"list"];
         
-        //恢复isloading为no
-        _headerView.isLoading = NO;
-        //恢复原来的额外显示区域
-        [UIView animateWithDuration:0.25 animations:^{
-            self.tableView.contentInset = UIEdgeInsetsMake(64 + 44, 0, 49, 0);
-        }];
-        
-        _headerView.hidden = YES;
+        _maxtime = responseObject[@"info"][@"maxtime"];
+        //停止刷新
+        [self.tableView.mj_header endRefreshing];
         
         //转模型数组
         NSArray *themeArray = [MYThemeItem mj_objectArrayWithKeyValuesArray:dictArr];
@@ -138,12 +142,7 @@ static NSString * const ID = @"theme";
         
         self.themeVMArrar = tempArray;
         
-        //判断是否显示，有数据就显示,加载完成再判断
-        _footerView.hidden = !self.themeVMArrar.count;
-        
-        _maxtime = responseObject[@"info"][@"maxtime"];//给请求参数赋值
-        
-        
+
         //刷新数据
         [self.tableView reloadData];
         
@@ -155,113 +154,28 @@ static NSString * const ID = @"theme";
 
 
 
-/*************** 监听滚动 ***************/
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    [self dealHeaderView];
-    
-    [self dealFooterView];
-}
-/*************** 监听滚动 ***************/
 
-
-/*************** 上拉业务处理 ***************/
-- (void)dealFooterView
-{
-    //获取当前偏移量
-    CGFloat offsetY = self.tableView.contentOffset.y;
-    
-    //计算最大偏移量
-    CGFloat maxOffsetY = self.tableView.contentSize.height + self.tableView.contentInset.bottom - MYScreenH;
-    
-    if (_footerView.isLoading) return;//正在刷新就返回
-    
-    //偏移量大于最大偏移量就开始刷新数据
-    if (offsetY > maxOffsetY) {
-        //显示加载页面（根据isloadingset方法中设置）
-        
-        //加载数据
-        [self loadMoreData];
-    }
-
-}
-/*************** 上拉业务处理 ***************/
-
-
-
-/*************** 下拉刷新业务 ***************/
-
-- (void)dealHeaderView
-{
-    CGFloat offsetY = self.tableView.contentOffset.y;
-    
-    CGFloat minOffsetY =  -(self.tableView.contentInset.top + _headerView.my_height);
-    
-    //控制文字和图片
-    if (offsetY<= minOffsetY) {
-        _headerView.isVisable = YES;
-    } else {
-        _headerView.isVisable = NO;
-    }
-}
-/*************** 下拉刷新业务 ***************/
-
-
-
-/*************** 开始拖拽 ***************/
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-{
-    _headerView.hidden = NO;
-}
-/*************** 开始拖拽 ***************/
-
-
-/*************** 松手 ***************/
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
-{
-    //
-    CGFloat offsetY = self.tableView.contentOffset.y;
-    
-    CGFloat minOffsetY =  -(self.tableView.contentInset.top + _headerView.my_height);
-    
-    //让空间显示当前位置，通过额外显示区域实现，加载数据
-    if (offsetY<= minOffsetY) {
-        _headerView.isLoading = YES;
-        
-        //显示当前位置
-        CGFloat top = self.tableView.contentInset.top + _headerView.my_height;
-        CGFloat bottom = self.tableView.contentInset.bottom;
-        
-        [UIView animateWithDuration:0.25 animations:^{
-            self.tableView.contentInset = UIEdgeInsetsMake(top, 0, bottom, 0);
-        }];
-        
-        //加载数据
-        [self loadNewData];
-    }
-}
-/*************** 松手 ***************/
 
 /*************** 加载更多数据 ***************/
 - (void)loadMoreData
 {
     //取消请求
-    [_manager.tasks makeObjectsPerformSelector:@selector(cancel)];
-    //开始设置isloading
-    _footerView.isLoading = YES;
-    //获取会话管理者
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
+
     //拼接参数
     NSMutableDictionary *pramaters = [NSMutableDictionary dictionary];
     pramaters[@"a"] = @"list";
     pramaters[@"c"] = @"data";
     pramaters[@"type"] = @"1";
-    pramaters[@"maxtime"] = _maxtime;
+
     
     //发送请求并解析数据
-    [_manager GET:MYBaseUrl parameters:pramaters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.manager GET:MYBaseUrl parameters:pramaters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [responseObject writeToFile:@"/Users/admin/Desktop/123.plist" atomically:YES];
         NSArray *dictArr = responseObject[@"list"];
+        _maxtime = responseObject[@"info"][@"maxtime"];
+        
+        [self.tableView.mj_footer endRefreshing];
         //转模型数组
         NSArray *themeArray = [MYThemeItem mj_objectArrayWithKeyValuesArray:dictArr];
         
@@ -278,11 +192,6 @@ static NSString * const ID = @"theme";
         [self.tableView reloadData];
         //给数组添加数据
         [self.themeVMArrar addObjectsFromArray:tempArray];
-        
-     //在此修改刚刚返回的参数，以备下次刷新使用
-        _maxtime = responseObject[@"info"][@"maxtime"];//给请求参数赋值
-        
-        _footerView.isLoading = NO;
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         

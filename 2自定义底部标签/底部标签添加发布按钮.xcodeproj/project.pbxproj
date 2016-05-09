@@ -17,10 +17,6 @@
 		8417962F1CD0CD3C0053E6FA /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 841796281CD0CD3C0053E6FA /* LaunchImage@2x.png */; };
 		841796371CD0CDBE0053E6FA /* MYADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841796351CD0CDBE0053E6FA /* MYADViewController.m */; };
 		841796381CD0CDBE0053E6FA /* MYADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841796361CD0CDBE0053E6FA /* MYADViewController.xib */; };
-		841C3A2C1CE01EFA009B725E /* MYFooterRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 841C3A2B1CE01EFA009B725E /* MYFooterRefreshView.m */; };
-		841C3A2E1CE01F0A009B725E /* MYFooterRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841C3A2D1CE01F0A009B725E /* MYFooterRefreshView.xib */; };
-		841C3A311CE0314D009B725E /* MYheaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 841C3A301CE0314D009B725E /* MYheaderView.m */; };
-		841C3A331CE0315C009B725E /* MYheaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841C3A321CE0315C009B725E /* MYheaderView.xib */; };
 		84200AA11CD232260010E8FA /* MYFoucsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84200AA01CD232260010E8FA /* MYFoucsViewController.xib */; };
 		84200AA51CD23DB60010E8FA /* MYLoginRegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84200AA31CD23DB60010E8FA /* MYLoginRegistViewController.m */; };
 		84200AA61CD23DB60010E8FA /* MYLoginRegistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84200AA41CD23DB60010E8FA /* MYLoginRegistViewController.xib */; };
@@ -113,12 +109,6 @@
 		841796341CD0CDBE0053E6FA /* MYADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYADViewController.h; sourceTree = "<group>"; };
 		841796351CD0CDBE0053E6FA /* MYADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYADViewController.m; sourceTree = "<group>"; };
 		841796361CD0CDBE0053E6FA /* MYADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYADViewController.xib; sourceTree = "<group>"; };
-		841C3A2A1CE01EFA009B725E /* MYFooterRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFooterRefreshView.h; sourceTree = "<group>"; };
-		841C3A2B1CE01EFA009B725E /* MYFooterRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFooterRefreshView.m; sourceTree = "<group>"; };
-		841C3A2D1CE01F0A009B725E /* MYFooterRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYFooterRefreshView.xib; sourceTree = "<group>"; };
-		841C3A2F1CE0314D009B725E /* MYheaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYheaderView.h; sourceTree = "<group>"; };
-		841C3A301CE0314D009B725E /* MYheaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYheaderView.m; sourceTree = "<group>"; };
-		841C3A321CE0315C009B725E /* MYheaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYheaderView.xib; sourceTree = "<group>"; };
 		84200AA01CD232260010E8FA /* MYFoucsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYFoucsViewController.xib; sourceTree = "<group>"; };
 		84200AA21CD23DB60010E8FA /* MYLoginRegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLoginRegistViewController.h; sourceTree = "<group>"; };
 		84200AA31CD23DB60010E8FA /* MYLoginRegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLoginRegistViewController.m; sourceTree = "<group>"; };
@@ -329,19 +319,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		841C3A291CE01EC2009B725E /* refreshView */ = {
-			isa = PBXGroup;
-			children = (
-				841C3A2A1CE01EFA009B725E /* MYFooterRefreshView.h */,
-				841C3A2B1CE01EFA009B725E /* MYFooterRefreshView.m */,
-				841C3A2D1CE01F0A009B725E /* MYFooterRefreshView.xib */,
-				841C3A2F1CE0314D009B725E /* MYheaderView.h */,
-				841C3A301CE0314D009B725E /* MYheaderView.m */,
-				841C3A321CE0315C009B725E /* MYheaderView.xib */,
-			);
-			path = refreshView;
-			sourceTree = "<group>";
-		};
 		846144EB1CDF7530001324FD /* PhotoTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -492,7 +469,6 @@
 		8482D4EE1CCBB76300070FAE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				841C3A291CE01EC2009B725E /* refreshView */,
 				84B55C221CD769B900C71AD2 /* ThemeCell */,
 				84945B021CD1047E00E5A7B3 /* MYTagCell.h */,
 				84945B031CD1047E00E5A7B3 /* MYTagCell.m */,
@@ -903,8 +879,6 @@
 				84B55C321CD776EB00C71AD2 /* MYTopView.xib in Resources */,
 				846144EA1CDF5790001324FD /* MYSeeBigPictureViewController.xib in Resources */,
 				841796291CD0CD3C0053E6FA /* LaunchImage-568h@2x.png in Resources */,
-				841C3A2E1CE01F0A009B725E /* MYFooterRefreshView.xib in Resources */,
-				841C3A331CE0315C009B725E /* MYheaderView.xib in Resources */,
 				8417962B1CD0CD3C0053E6FA /* LaunchImage-700@2x.png in Resources */,
 				84BA51101CD338A0002BA5BF /* MYPersonalViewController.storyboard in Resources */,
 				8417962A1CD0CD3C0053E6FA /* LaunchImage-700-568h@2x.png in Resources */,
@@ -984,7 +958,6 @@
 				84BA510B1CD2EF1A002BA5BF /* MYTextFiled.m in Sources */,
 				8471ED0F1CDA4CA5008527BB /* MYUserItem.m in Sources */,
 				84B55C301CD776DA00C71AD2 /* MYTopView.m in Sources */,
-				841C3A2C1CE01EFA009B725E /* MYFooterRefreshView.m in Sources */,
 				84A436561CD479FA00B6A696 /* MYNetTurnViewController.m in Sources */,
 				84AE330B1CD342990055F879 /* MYPersenalCell.m in Sources */,
 				8482D51D1CCBC75600070FAE /* UIView+MYExtension.m in Sources */,
@@ -999,7 +972,6 @@
 				8482D5161CCBBD4300070FAE /* MYNewViewController.m in Sources */,
 				84A79CF01CDB81F5008307CB /* UIImage+Image.m in Sources */,
 				84A1795D1CDE11FD00EC24A4 /* NSDate+date.m in Sources */,
-				841C3A311CE0314D009B725E /* MYheaderView.m in Sources */,
 				84B55C251CD769E300C71AD2 /* MYThemeCell.m in Sources */,
 				8482D5191CCBBF2B00070FAE /* MYNavViewController.m in Sources */,
 				84945AFE1CD0F58F00E5A7B3 /* MYTagSubViewController.m in Sources */,
