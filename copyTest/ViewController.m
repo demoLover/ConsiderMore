@@ -17,6 +17,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    unsigned char * str = "abcdefg";
+    unsigned char * res = "";
+    for (int i = 0; i < sizeof(str) / 2; i ++) {
+       
+    }
+    
+//    int x[6] = {1,3,5,6,7,8};
+//
+//    int x1[3];
+//
+//    for (int i= 0; i<3; i++) {
+//        x1[i] = x[i*2];
+//    }
+//
+    
+
+    
+    
 }
 
 
